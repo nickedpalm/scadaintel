@@ -1,0 +1,158 @@
+[
+  {
+    "slug": "baxter-woodman-consulting-engineers-milwaukee",
+    "name": "Baxter & Woodman Consulting Engineers",
+    "city": "Milwaukee",
+    "state": "WI",
+    "address": "",
+    "lat": 43.0389,
+    "lng": -87.9065,
+    "phone": "262.763.7834",
+    "website": "https://baxterwoodman.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Civil engineering firm providing sustainable and innovative solutions with emerging technologies. Has offices in Wisconsin including Milwaukee, Janesville, and Waterford.",
+    "certifications": [],
+    "services": [
+      "civil engineering",
+      "sustainable solutions",
+      "emerging technologies"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:51",
+    "sentiment": null
+  },
+  {
+    "slug": "sulzer-consulting-llc-milwaukee",
+    "name": "Sulzer Consulting, LLC",
+    "city": "Milwaukee",
+    "state": "WI",
+    "address": "",
+    "lat": 43.0389,
+    "lng": -87.9065,
+    "phone": "262.538.0589",
+    "website": "https://sulzerconsulting.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Industrial automation software solutions specializing in ICONICS SCADA/HMI and data collection. Serves Wisconsin and Illinois.",
+    "certifications": [],
+    "services": [
+      "SCADA/HMI",
+      "data collection",
+      "OPC",
+      "web-based HMI",
+      "business visualization"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:51",
+    "sentiment": null
+  },
+  {
+    "slug": "tellus-llc-milwaukee",
+    "name": "Tellus LLC",
+    "city": "Milwaukee",
+    "state": "WI",
+    "address": "Milwaukee, WI",
+    "lat": 43.0389,
+    "lng": -87.9065,
+    "phone": "",
+    "website": "",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "SCADA integrator specializing in SCADA systems and industrial automation.",
+    "certifications": [],
+    "services": [
+      "SCADA systems",
+      "industrial automation"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:51",
+    "sentiment": null
+  },
+  {
+    "slug": "town-country-engineering-milwaukee",
+    "name": "Town & Country Engineering",
+    "city": "Milwaukee",
+    "state": "WI",
+    "address": "",
+    "lat": 43.0389,
+    "lng": -87.9065,
+    "phone": "2900707236",
+    "website": "https://tcengineers.net",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Water well systems, water distribution, filtering, and water management utilizing SCADA technology.",
+    "certifications": [],
+    "services": [
+      "SCADA",
+      "water well systems",
+      "water distribution",
+      "water management"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:51",
+    "sentiment": {
+      "label": "positive",
+      "score": 0.98,
+      "keywords": [
+        "expertise",
+        "responsive",
+        "attention to detail",
+        "professional",
+        "trustworthy",
+        "value-driven"
+      ],
+      "highlights": [
+        {
+          "text": "The money we invest for your expertise is well worth it.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Town and Country did a great job and we look forward to working with you again.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "I am grateful for your attention to detail, the prompt way you respond to questions.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Proven to me without a doubt why we have hired you for the biggest project in the city's history.",
+          "sentiment": "positive"
+        }
+      ],
+      "summary": "Universally praised by municipal clients for deep expertise, prompt responsiveness, meticulous attention to detail, and exceptional value across major infrastructure projects."
+    }
+  }
+]

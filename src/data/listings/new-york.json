@@ -1,0 +1,121 @@
+[
+  {
+    "slug": "arm-enertech-associates-new-york",
+    "name": "ARM EnerTech Associates",
+    "city": "New York",
+    "state": "NY",
+    "address": "",
+    "lat": 40.7128,
+    "lng": -74.006,
+    "phone": "",
+    "website": "https://www.armenertech.net",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Trusted partner for SCADA, PLC, and control system design across NYC transit projects, serving LIRR, PATH, Amtrak with electrical engineering solutions.",
+    "certifications": [],
+    "services": [
+      "SCADA systems",
+      "PLC programming",
+      "electrical engineering",
+      "automation for transit"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:57:04",
+    "sentiment": null
+  },
+  {
+    "slug": "nic-systems-new-york",
+    "name": "NIC Systems",
+    "city": "New York",
+    "state": "NY",
+    "address": "",
+    "lat": 40.7128,
+    "lng": -74.006,
+    "phone": "(860) 529.0110",
+    "website": "https://www.nicsystems.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Leading SCADA system integrators designing, programming, and implementing SCADA platforms serving New York, Connecticut, and New Jersey.",
+    "certifications": [],
+    "services": [
+      "SCADA design",
+      "SCADA programming",
+      "SCADA implementation"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:57:04",
+    "sentiment": null
+  },
+  {
+    "slug": "trimark-associates-new-york",
+    "name": "Trimark Associates",
+    "city": "New York",
+    "state": "NY",
+    "address": "",
+    "lat": 40.7128,
+    "lng": -74.006,
+    "phone": "2604041937",
+    "website": "https://trimarkassoc.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Provides SCADA planning and control systems consulting to improve project reliability and performance.",
+    "certifications": [],
+    "services": [
+      "SCADA planning",
+      "control systems consulting"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:57:04",
+    "sentiment": {
+      "label": "positive",
+      "score": 0.88,
+      "keywords": [
+        "expertise",
+        "customer support",
+        "reliability",
+        "professional",
+        "crisis management",
+        "experienced"
+      ],
+      "highlights": [
+        {
+          "text": "We've helped over 900 resources navigate CAISO's NRI with expert advice",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Our team worked nights and weekends to add 227 MW of critical reserves just in time to help avoid a crisis",
+          "sentiment": "positive"
+        },
+        {
+          "text": "I help customers gain peace of mind and operate confidently in accomplishing their mission",
+          "sentiment": "positive"
+        }
+      ],
+      "summary": "Trimark Associates is portrayed as a highly professional, experienced firm with strong customer support focus, demonstrated crisis management capability, and deep expertise in renewable energy compliance across multiple grid operators."
+    }
+  }
+]

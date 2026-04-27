@@ -1,0 +1,61 @@
+[
+  {
+    "slug": "control-assemblies-inc-minneapolis",
+    "name": "Control Assemblies, Inc.",
+    "city": "Minneapolis",
+    "state": "MN",
+    "address": "15400 Medina Road, Minneapolis, MN 55447-1473",
+    "lat": 44.9778,
+    "lng": -93.265,
+    "phone": "",
+    "website": "",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "SCADA systems manufacturer and service provider",
+    "certifications": [],
+    "services": [
+      "SCADA systems manufacturing",
+      "service"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:26",
+    "sentiment": null
+  },
+  {
+    "slug": "ztr-control-systems-minneapolis",
+    "name": "ZTR Control Systems",
+    "city": "Minneapolis",
+    "state": "MN",
+    "address": "8050 County Road 101 East, Minneapolis, MN 55379",
+    "lat": 44.9778,
+    "lng": -93.265,
+    "phone": "",
+    "website": "",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "SCADA systems manufacturer",
+    "certifications": [],
+    "services": [
+      "SCADA systems manufacturing"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:26",
+    "sentiment": null
+  }
+]

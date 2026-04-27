@@ -1,0 +1,167 @@
+{
+  "name": "SCADA Consultants",
+  "brandName": "SCADAIntel",
+  "slug": "scadaintel",
+  "domain": "scadaintel.com",
+  "siteUrl": "https://scadaintel.com",
+  "tagline": "Credentialed SCADA consultants, independently listed.",
+  "description": "The most comprehensive directory of GICSP- and CAP-credentialed SCADA consultants, OT cybersecurity specialists, and industrial control systems integrators in the United States.",
+  "jobValue": "$10,000-150,000 per engagement",
+  "industry": "tech",
+  "primaryKeyword": "SCADA consultant",
+  "secondaryKeywords": [
+    "OT cybersecurity consultant",
+    "industrial control systems integrator",
+    "ICS security assessment",
+    "SCADA system design",
+    "PLC programming consultant",
+    "industrial automation engineer"
+  ],
+  "certifications": [
+    "GICSP (Global Industrial Cyber Security Professional \u2014 GIAC)",
+    "CAP (ISA Certified Automation Professional)",
+    "CCST (ISA Certified Control Systems Technician)",
+    "ISA/IEC 62443 Cybersecurity Certificate",
+    "CISM (Certified Information Security Manager \u2014 ISACA)",
+    "PE (Professional Engineer \u2014 Electrical/Control Systems)"
+  ],
+  "extraFields": [],
+  "cityPagePromptContext": "SCADA consultants design, implement, and secure Supervisory Control and Data Acquisition systems for utilities, manufacturing plants, oil & gas facilities, and water/wastewater treatment operations.\nCredentialed professionals (GICSP, CAP, ISA/IEC 62443) perform system architecture design, PLC/HMI programming, network segmentation, cybersecurity risk assessments, and NERC CIP compliance reviews. Plant engineers and utility operators hire them during control system modernization projects, after cybersecurity incidents, or when seeking independent OT security audits. Deliverables include architecture diagrams, vulnerability assessments, remediation roadmaps, and hands-on implementation support.\n",
+  "contactEmail": "contact@scadaintel.com",
+  "buyerPersona": "plant engineers and utilities",
+  "servicePhrase": "SCADA consulting",
+  "primaryCredential": "GICSP",
+  "buyerSearchContext": "when upgrading legacy control systems, after a cybersecurity incident or audit finding, during a plant expansion, or when seeking ICS/OT compliance assessment",
+  "editorialAuthor": {
+    "name": "Nick Palmer",
+    "title": "Founder & Lead Researcher",
+    "bio": "Nick built this directory to help plant engineers and utilities find credentialed SCADA consultants without wading through vendors who mostly want to sell proprietary hardware \u2014 a conflict of interest he ran into when evaluating control system upgrades for an industrial facility.",
+    "linkedin": "https://linkedin.com/in/nickedpalmer"
+  },
+  "stripeSponsoredLink": "",
+  "stripeCityProLink": "",
+  "stripeFeaturedMonthlyLink": "https://buy.stripe.com/cNicN49vkgWcepK8Mpa3u3U",
+  "stripeFeaturedAnnualLink": "https://buy.stripe.com/9B64gy4b00Xe3L6e6Ja3u3V",
+  "stripeCityProMonthlyLink": "https://buy.stripe.com/eVqcN4dLAeO45Te4w9a3u3W",
+  "stripeCityProAnnualLink": "https://buy.stripe.com/28EeVcdLAfS8bdybYBa3u3X",
+  "stripeFeaturedProductId": "prod_UFN2qKsjabkruB",
+  "stripeCityProProductId": "prod_UFN2TmA69dbm54",
+  "stripeFeaturedMonthlyPriceId": "price_1TQf64CIgRyRDQ2PQPiHuHwT",
+  "stripeFeaturedAnnualPriceId": "price_1TQf66CIgRyRDQ2Pe242vmqh",
+  "stripeCityProMonthlyPriceId": "price_1TQf67CIgRyRDQ2PZQ9vwj0Z",
+  "stripeCityProAnnualPriceId": "price_1TQf69CIgRyRDQ2PObbHKzHC",
+  "pricing": {
+    "featuredMonthlyUsd": 49,
+    "featuredAnnualUsd": 441,
+    "cityProMonthlyUsd": 149,
+    "cityProAnnualUsd": 1341
+  },
+  "listmonkListId": "62",
+  "listmonkTplMagicLink": "62",
+  "listmonkTplLeadNotify": "63",
+  "listmonkTplGuideDelivery": "64",
+  "ga4MeasurementId": "G-QDMHPT9FBG",
+  "turnstileSitekey": "",
+  "turnsiteSitekey": "",
+  "googleAnalyticsId": "G-QDMHPT9FBG",
+  "foundedYear": 2026,
+  "listings": {
+    "schema": [
+      {
+        "key": "gicsp_certified",
+        "type": "boolean",
+        "label": "GICSP Certified",
+        "display": "badge",
+        "facet": true,
+        "scrape_hint": "Look for GICSP credential logos, GIAC certification numbers, or explicit 'GICSP' mentions on the about page, team bios, or certifications section."
+      },
+      {
+        "key": "years_experience",
+        "type": "number",
+        "label": "Years of Experience",
+        "display": "range",
+        "facet": false,
+        "unit": "years",
+        "scrape_hint": "Extract from 'About Us', team bios, or '20+ years in industrial automation' statements; calculate from founding year if business start date is provided."
+      },
+      {
+        "key": "certifications",
+        "type": "multi_enum",
+        "label": "Professional Certifications",
+        "display": "pill_list",
+        "facet": true,
+        "enum": [
+          "GICSP",
+          "CAP",
+          "CCST",
+          "IEC 62443",
+          "CISM",
+          "PE"
+        ],
+        "scrape_hint": "Scan credentials section, team profiles, or certification logos for GIAC, ISA, ISACA, or PE license markers; match exact acronyms and full certification names."
+      },
+      {
+        "key": "ot_cybersecurity_specialist",
+        "type": "boolean",
+        "label": "OT/ICS Cybersecurity Specialist",
+        "display": "badge",
+        "facet": true,
+        "scrape_hint": "Check for mentions of 'OT security', 'ICS cybersecurity', 'NERC CIP compliance', 'industrial network segmentation', or ISA/IEC 62443 assessments in services or methodology pages."
+      },
+      {
+        "key": "vendor_independent",
+        "type": "boolean",
+        "label": "Vendor-Independent",
+        "display": "badge",
+        "facet": true,
+        "scrape_hint": "Look for statements like 'vendor-agnostic', 'platform-independent', 'we do not resell hardware', or absence of exclusive OEM partnerships in offerings or partnerships pages."
+      },
+      {
+        "key": "industries_served",
+        "type": "multi_enum",
+        "label": "Industries Served",
+        "display": "pill_list",
+        "facet": true,
+        "enum": [
+          "Oil & Gas",
+          "Water/Wastewater",
+          "Electric Utilities",
+          "Manufacturing",
+          "Chemical/Petrochemical"
+        ],
+        "scrape_hint": "Parse industry pages, case studies, or 'Markets We Serve' sections; match keywords like 'upstream/downstream', 'municipal water', 'power generation', 'discrete manufacturing', or 'chemical processing'."
+      },
+      {
+        "key": "engagement_types",
+        "type": "multi_enum",
+        "label": "Engagement Types",
+        "display": "pill_list",
+        "facet": true,
+        "enum": [
+          "System Design & Integration",
+          "Cybersecurity Assessment",
+          "Legacy System Modernization",
+          "NERC CIP Compliance",
+          "PLC/HMI Programming"
+        ],
+        "scrape_hint": "Parse services menu, homepage offerings, or capability pages; match keywords like 'system architecture', 'vulnerability assessment', 'DCS migration', 'compliance audit', or 'PLC programming'."
+      },
+      {
+        "key": "phone",
+        "type": "phone",
+        "label": "Phone Number",
+        "display": "text",
+        "facet": false,
+        "scrape_hint": "Extract from header, footer, contact page, or click-to-call buttons; normalize to standard format (e.g., (555) 123-4567)."
+      },
+      {
+        "key": "website",
+        "type": "url",
+        "label": "Website",
+        "display": "link",
+        "facet": false,
+        "scrape_hint": "Capture primary domain from browser address bar, homepage links, or business listings; ensure full URL with https:// protocol."
+      }
+    ]
+  }
+}

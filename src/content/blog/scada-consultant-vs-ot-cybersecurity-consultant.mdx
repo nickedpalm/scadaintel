@@ -1,0 +1,104 @@
+---
+title: "SCADA Consultant vs. Ot Cybersecurity Consultant: Do You Need Both?"
+description: "A SCADA consultant designs your control systems — an OT cybersecurity consultant defends them. NERC CIP compliance and incident readiness require both."
+pubDate: 2026-04-26
+author: "Nick Palmer"
+tags: ["SCADA consultant", "comparison", "ot-cybersecurity-consultant"]
+hub: "The Complete Guide to SCADA Consultants"
+---
+
+A plant manager once called me in a panic after a ransomware hit locked up his HMI screens at 2 a.m. His SCADA consultant — the same guy who had designed the control architecture three years earlier — was on the phone within the hour. Smart guy. Deep knowledge of the PLCs, the network topology, the vendor firmware quirks. But when the incident responders started asking about threat actor TTPs, lateral movement paths, and OT-specific detection logic, he went quiet. "That's not really my lane," he said.
+
+Nobody tells you there's a lane difference until you're standing in the middle of an incident.
+
+> **The Short Version:** A SCADA consultant designs and implements your control systems. An OT cybersecurity consultant protects them from attack. The roles overlap but are not the same — and for critical infrastructure, you often need both. If you're modernizing a facility or dealing with compliance like NERC CIP, budget for both upfront. Hiring one and hoping they cover the other is how plants get surprised at 2 a.m.
+
+**Key Takeaways**
+- SCADA consultants own system design, integration, and operational performance; OT cybersecurity consultants own risk assessment, threat detection, and compliance.
+- Both roles share knowledge of industrial protocols (Modbus, DNP3, EtherNet/IP) — but their priorities and deliverables are different.
+- OT/ICS systems prioritize availability over everything else; a cybersecurity consultant who doesn't understand that will break things trying to protect them.
+- You don't always need both at once — but you need to know when to call which one.
+
+---
+
+## What a SCADA Consultant Actually Does
+
+A SCADA consultant's job is to make your control systems work — correctly, reliably, and at scale. That means PLC/HMI programming, network architecture for operational technology, historian configuration, alarm rationalization, and vendor integration. They speak the language of P&IDs, ladder logic, and ISA-88 batch standards.
+
+When a water utility needs to migrate from a 15-year-old Wonderware system to a modern SCADA platform, a SCADA consultant runs that project. When an oil refinery needs redundant control loops for a new processing unit, a SCADA consultant designs them. The deliverable is a system that runs.
+
+Credentials to look for: Certified Automation Professional (CAP), ISA/IEC 62443 Cybersecurity Certificate, vendor-specific certifications (Rockwell, Siemens, Ignition). The [complete guide to SCADA consultants](/blog/complete-guide-SCADA-consultants/) covers vetting criteria in depth.
+
+> **Pro Tip:** A good SCADA consultant thinks about cybersecurity during design — network segmentation, vendor patch schedules, remote access hardening. A great one will tell you upfront when a design decision creates a security liability. If yours never mentions security, that's a gap to fill.
+
+---
+
+## What an OT Cybersecurity Consultant Actually Does
+
+An OT cybersecurity consultant's job is to find and close the ways an attacker — or an accident — could disrupt your industrial operations. That means vulnerability assessments, asset discovery, network monitoring, incident response planning, and compliance alignment to frameworks like IEC/ISA 62443, NIST 800-82, and NERC CIP.
+
+Here's what most people miss: OT security is not IT security with a hard hat on. The CIA triad in IT treats confidentiality, integrity, and availability as roughly equal priorities. In OT, availability is everything — downtime can halt a power grid, contaminate a water supply, or trigger a safety shutdown in a chemical plant. An OT cybersecurity consultant who defaults to IT-style patching cycles or firewall rules built for enterprise networks will cause outages chasing threats.
+
+The right OT cybersecurity consultant starts with your process, not your perimeter.
+
+---
+
+## The Comparison That Actually Matters
+
+| Dimension | SCADA Consultant | OT Cybersecurity Consultant |
+|---|---|---|
+| **Primary goal** | Make systems work and run reliably | Make systems resilient to attack and failure |
+| **Core deliverables** | Architecture diagrams, PLC code, HMI builds, integration specs | Vulnerability assessments, risk registers, remediation roadmaps, detection playbooks |
+| **Frameworks used** | ISA-88, ISA-95, vendor-specific standards | IEC/ISA 62443, NIST 800-82, NERC CIP, ISO 27019, NIS2 |
+| **Typical engagement trigger** | Modernization project, new facility, system failure | Security audit, incident, compliance deadline, M&A due diligence |
+| **Risk focus** | Operational reliability, uptime, process accuracy | Cyber threats, regulatory fines, ransomware, insider risk |
+| **Overlap zone** | Network segmentation, remote access design, vendor hardening | Same — but from a defensive posture |
+
+The overlap zone is where things get expensive if you're not careful. Both roles touch network segmentation. Both care about remote access. A SCADA consultant will design a DMZ that meets operational needs; an OT cybersecurity consultant will audit whether that DMZ actually stops an attacker. You need both perspectives — ideally before you build, not after.
+
+---
+
+## When You Need One, When You Need Both
+
+**Hire a SCADA consultant when:**
+- You're building or upgrading a control system
+- You're migrating platforms or integrating new equipment
+- You need PLC/HMI programming, historian setup, or SCADA architecture
+- You're troubleshooting operational performance issues
+
+**Hire an OT cybersecurity consultant when:**
+- You've had a security incident or near-miss
+- You're facing a NERC CIP audit or NIS2 compliance deadline
+- You're connecting OT to IT or the internet (Industry 4.0 / IIoT projects)
+- You need an independent risk assessment or third-party validation
+
+**Hire both when:**
+- You're doing a greenfield build or major modernization (security baked in from day one is cheaper than bolted on later)
+- You're acquiring or integrating an industrial asset
+- Your legacy systems have unknown connectivity exposure — and most do
+
+> **Reality Check:** Legacy OT environments are riddled with unpatched hardware running proprietary protocols that were never designed to be networked. When you connect them to IIoT platforms for Industry 4.0 visibility, you're expanding the attack surface faster than most organizations realize. That's not an IT problem — it's an OT architecture problem that requires both sets of expertise to solve.
+
+---
+
+## The Cost Reality
+
+I'll be honest: published rates are rare in this space. OT security assessments — covering asset discovery, vulnerability scanning, and compliance gap analysis — typically bundle into consulting engagements priced by asset count and facility complexity. Enterprise-scale continuous monitoring retainers (ISO 27019, NERC CIP) run in the $50K–$500K/year range depending on scope.
+
+What most buyers don't price in: the cost of not hiring the right person. NERC CIP violations carry fines up to $1 million per violation per day. A ransomware event that halts production for a week at a manufacturing plant can cost multiples of what a full OT security program costs annually.
+
+The math is not complicated.
+
+---
+
+## Practical Bottom Line
+
+If you're doing a control system project and security isn't on the scope of work, add it — or bring in an OT cybersecurity consultant to run a parallel track. If you're facing a compliance audit, an OT cybersecurity consultant is the primary hire, but loop in your SCADA consultant to make sure remediation doesn't break operational performance.
+
+The two roles aren't rivals. The best projects I've seen treat them as a team: the SCADA consultant owns the system, the OT cybersecurity consultant owns the threat model, and they argue productively about every decision that touches both.
+
+Start with the [complete guide to SCADA consultants](/blog/complete-guide-SCADA-consultants/) to understand the baseline skill set, then layer in security requirements based on your regulatory exposure and threat environment.
+
+The goal isn't perfect security. The goal is a system that runs and can't be easily stopped by someone who shouldn't have access to it.
+
+Those aren't the same thing — but you can have both.

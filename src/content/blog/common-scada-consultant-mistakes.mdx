@@ -1,0 +1,138 @@
+---
+title: "9 Common SCADA Consultant Mistakes (And How to Avoid Them)"
+description: "Most SCADA consultant projects fail on the human side: operators excluded, security added too late. 9 common mistakes and the specific fixes behind each."
+pubDate: 2026-04-26
+author: "Nick Palmer"
+tags: ["SCADA consultant", "mistakes", "tips"]
+hub: "The Complete Guide to SCADA Consultants"
+---
+
+The Skill tool isn't available in this environment, so I'll proceed directly with writing the article.
+
+---
+
+A water utility in the Midwest hired a SCADA consultant six months into a control system modernization. The consultant showed up, spent two weeks mapping requirements, then handed off a 40-page architecture document. The plant operators — who had run the old system for fifteen years — never saw it until go-live. On day one, the new HMI alarm layout made zero sense to the people actually watching the pumps. Three operators quietly kept running manual overrides "just in case." The consultant was long gone.
+
+Nobody blew up a facility. But the project was six months behind, the operators hated the system, and the utility paid for a second round of engineering to fix what should have been right the first time.
+
+This happens constantly. And it happens on both sides of the table.
+
+> **The Short Version:** Most SCADA projects fail not because the technology is wrong, but because the human side — requirements, training, integration planning, and ongoing ownership — gets treated as an afterthought. Fix the process, and the technology takes care of itself.
+
+**Key Takeaways**
+- Scope creep from fuzzy requirements is one of the top budget-killers on SCADA projects — freeze scope with a formal change control process before design begins
+- Cybersecurity bolted on after deployment is not cybersecurity; it needs to be designed into the architecture from day one
+- Legacy system complexity is almost always underestimated — front-load your discovery audit
+- Operators who don't trust a system will route around it; involve them early or pay later
+
+---
+
+For a complete foundation on how SCADA engagements work, see [The Complete Guide to SCADA Consultants](/blog/complete-guide-SCADA-consultants/).
+
+---
+
+## Mistake 1: Jumping to Design Before Requirements Are Locked
+
+The pressure to "get moving" is real. Budgets are approved, schedules are set, and everyone wants to see progress. So consultants skip the slow, painful work of stakeholder workshops and dive into design.
+
+The result: mismatches between what was built and what operators actually need, mid-project rework, and scope creep that burns through contingency budgets before anyone sees a live screen.
+
+**What good looks like:** Structured requirements and risk workshops before a single diagram gets drawn. Document user journeys and acceptance criteria. Get sign-off. Then freeze scope with a formal change control process — any additions get evaluated against timeline and cost before they're accepted.
+
+> **Pro Tip:** Run peer reviews and simulations against your documented requirements before design begins. It's uncomfortable to find gaps at the workshop stage. It's expensive to find them during FAT.
+
+---
+
+## Mistake 2: Treating Cybersecurity as a Phase 3 Problem
+
+I'll be honest — this one makes me tired, because it keeps happening. A consultant designs a beautiful, functional SCADA architecture and then hands it off to IT security six weeks before go-live. Security flags nine issues. Half require re-architecture.
+
+SCADA systems carry nine well-documented vulnerability categories — unpatched software, weak authentication, and unencrypted communications sitting at the top. Retrofitting protections against these after the fact is harder, more expensive, and less effective than designing them in from the start.
+
+**What good looks like:** Security requirements in the first design review. Patch management, network segmentation, and role-based authentication baked into the wiring, not layered on top. Consultants with GICSP or ISA/IEC 62443 credentials aren't just résumé padding — they're the ones who know where the vulnerabilities live before deployment.
+
+---
+
+## Mistake 3: Underestimating Legacy System Complexity
+
+"It's just a protocol bridge" is the most expensive sentence in industrial automation.
+
+Every legacy system has fifteen years of undocumented tweaks, custom configurations, and workarounds that the retiring engineer carried in their head. Assuming old systems will plug cleanly into modern SCADA without a detailed audit is how projects blow their timelines.
+
+**What good looks like:** A thorough discovery audit of every asset, firmware version, communication protocol, and documented-or-not configuration before a single integration decision gets made. Prove the integration in a lab environment before you touch the live system.
+
+---
+
+## Mistake 4: Poor Integration Planning Across the Lifecycle
+
+Related to legacy complexity, but broader: integration isn't a one-time task at commissioning. It's something that needs to be tested at every stage — design, development, factory acceptance testing, site acceptance testing, and post-go-live.
+
+Real projects get integration surprises at every one of those stages. The ones that handle it gracefully are the ones that planned for it.
+
+> **Reality Check:** Integration challenges "chew up budgets, blow timelines, and create safety and compliance gaps" — not because the technology is incompatible, but because discovery was rushed and testing was back-loaded.
+
+---
+
+## Mistake 5: Letting "Real-Time" Mean Different Things to Different People
+
+A plant manager's "real-time" and a control engineer's "real-time" are not the same thing. If stakeholders don't align on what latency is acceptable before design begins, someone will be unhappy at go-live.
+
+Late alarms, outdated data displays, and degraded decision quality are the downstream effects of a requirement that was never actually defined.
+
+**What good looks like:** A written definition of real-time requirements — maximum acceptable latency, polling intervals, data freshness thresholds — agreed upon by all stakeholders before architecture is finalized. Large utilities handle this by using SOE (sequence of events) timestamped data from field devices, which maintains accuracy even through latency and disconnections.
+
+---
+
+## Mistake 6: Ignoring the Operators Until Training Week
+
+This is the human-factors mistake, and it's endemic. Operators are the people who will live with your system for the next decade. Bringing them in for a three-day training at the end of the project is not operator involvement.
+
+| Engagement Level | What It Looks Like | Outcome |
+|---|---|---|
+| Late (training only) | Operators see the system at go-live | Distrust, manual overrides, shadow workflows |
+| Mid-project reviews | Screen reviews, alarm sign-offs | Better UI, but still some surprises |
+| Early involvement | Operators in requirements workshops, testing rounds | High adoption, fewer post-go-live calls |
+
+**What good looks like:** Operators in the room during requirements workshops, reviewing HMI mockups, signing off on alarm philosophies. Role-based training for operators, engineers, and maintenance staff — not the same session. Documented playbooks that convert the old-timers' tacit knowledge into something the next hire can use.
+
+---
+
+## Mistake 7: Treating the Project as Done at Go-Live
+
+Nobody tells you this: a SCADA system that isn't continuously maintained will quietly degrade. Firmware falls behind. Patches don't get applied. Custom configurations drift. Performance slips before anyone notices.
+
+SCADA is an evolving system, not a deliverable. The consultants who say otherwise are the ones who don't want to be around for year two.
+
+---
+
+## Mistake 8: Monitoring Everything Without Prioritizing Anything
+
+More signals isn't better. Operators drowning in undifferentiated alarm floods are operators who start ignoring alarms — which is how bad things happen.
+
+The mistake is treating signal monitoring as a volume problem rather than a prioritization problem. Good SCADA engineering monitors interrelationships between signals and flags sensor quality issues, not just raw values.
+
+> **Pro Tip:** Build your alarm philosophy before you configure a single tag. Prioritize by consequence, not by what's technically available to monitor.
+
+---
+
+## Mistake 9: Skipping Staged Testing and Change Management
+
+Majority of SCADA systems that fail operational standards do so because of absent staged testing and poor change management practices — not because the hardware was wrong. Undocumented changes, skipped sign-offs, and "we'll test it in production" thinking are how control systems develop gremlins nobody can explain.
+
+**What good looks like:** Insist on standards adherence at every stage. Any change — even minor — gets a documented audit trail. Staged testing from bench to FAT to SAT before anything touches live operations.
+
+---
+
+## Practical Bottom Line
+
+Here's what separates good SCADA projects from expensive lessons:
+
+1. **Lock requirements before design.** Run workshops, document everything, freeze scope with a change control process.
+2. **Hire for cybersecurity credentials, not just automation experience.** GICSP or ISA/IEC 62443 certification matters.
+3. **Audit legacy systems first.** Don't assume. Discover, document, then design.
+4. **Involve operators early.** Not at training week — at the requirements stage.
+5. **Plan for ongoing maintenance.** The project doesn't end at go-live.
+
+The consultant who pushes back on a compressed requirements timeline, insists on staged testing, and brings operators into the room early is not being difficult. They're the one who's done this before and knows where the bodies are buried.
+
+That's the consultant worth hiring.

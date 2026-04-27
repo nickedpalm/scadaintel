@@ -1,0 +1,12 @@
+---
+import config from '~/config';
+---
+
+{/* Header always has a white/light background (sticky with flow layout
+    doesn't overlap hero sections), so the dark/color logo variant is the
+    only one that reads. /logo.png ships as the dark-on-light variant. */}
+<img
+  src="/logo.png"
+  alt={config.brandName}
+  class="h-8 md:h-10 w-auto group-hover:opacity-90 transition-opacity"
+/>

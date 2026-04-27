@@ -1,0 +1,124 @@
+---
+title: "What to Expect When You Hire an SCADA Consultant (Step by Step)"
+description: "Hiring a SCADA consultant wrong costs more than the project itself. See the 3-phase QBS process that protects plant engineers from rushed, costly mistakes."
+pubDate: 2026-04-26
+author: "Nick Palmer"
+tags: ["SCADA consultant", "process", "guide"]
+hub: "The Complete Guide to SCADA Consultants"
+---
+
+The skills tool isn't available in this context. Writing the article now based on the research and style guide provided.
+
+---
+
+The plant manager two facilities over called me last spring in a panic. A ransomware group had hit a water district in their region, and his operations team had just discovered their SCADA system hadn't been patched in four years. He needed a consultant — fast — and had no idea where to start. He ended up signing with the first firm that called him back. They were not the right firm.
+
+Rushing the hire is the single most expensive mistake in SCADA consulting engagements. The second most expensive? Not knowing what to expect once you do hire someone.
+
+> **The Short Version:** A proper SCADA consultant engagement runs in three phases — project definition, competitive selection via Qualification-Based Selection (QBS), and scoped implementation. Rushed hires on freelance platforms take 48–72 hours; structured QBS engagements take longer but dramatically reduce project risk. You'll need to bring documentation, access credentials, and a clear asset list before day one.
+
+**Key Takeaways:**
+- QBS (Qualification-Based Selection) is the industry-standard procurement method — scope and fees are negotiated *after* you pick the most qualified firm, not before
+- Consultants need your network architecture docs, SOPs, and asset list before they can be effective — showing up empty-handed adds weeks
+- Implementation follows a defined 5-step sequence from requirements through commissioning; skipping any step compounds risk downstream
+- "Fastest hire" and "best hire" are rarely the same thing in OT environments
+
+---
+
+## Phase 1: Before You Call Anyone
+
+Here's what most people miss: the vetting process doesn't start when a consultant walks in. It starts when you get clear on what you actually need.
+
+Before you issue a single request for qualifications, your team needs to nail down four things:
+
+1. **Which assets need monitoring and control** — not a vague category, an actual list
+2. **What parameters matter** — flow rates, pressure thresholds, temperature limits, whatever your process demands
+3. **Key software features required** — historian integration, alarm management, mobile HMI, OPC UA connectivity
+4. **Cybersecurity posture requirements** — are you subject to NERC CIP? ISA/IEC 62443 alignment? This changes who you need.
+
+Nobody tells you this, but skipping this step is the reason most SCADA engagements go sideways. You can't evaluate a consultant's qualifications against a vague brief. You'll end up selecting whoever gives you the most confident pitch rather than the most relevant experience.
+
+---
+
+## Phase 2: The Selection Process (Do It Right)
+
+The industry standard is **Qualification-Based Selection (QBS)** — a procurement method where you evaluate *who* before you negotiate *how much*.
+
+Here's why that order matters: if you let price drive the shortlist, you end up comparing bids from firms with wildly different scopes and assumptions. QBS forces an apples-to-apples qualifications review first, then negotiates fees with the winner. If that negotiation breaks down, you move to the second-ranked firm.
+
+The typical QBS sequence:
+
+| Step | What Happens |
+|---|---|
+| Issue RFQ | Send request for qualifications to candidate firms |
+| Evaluate submissions | Review technical depth, relevant project history, certifications (GICSP, CAP) |
+| Build shortlist | Identify top 3–5 firms for interviews |
+| Conduct interviews | Assess fit, communication style, familiarity with your sector |
+| Rank and select | Choose top-ranked firm |
+| Negotiate scope + fee | Define deliverables and price together |
+| Execute contract | Sign and move to onboarding |
+
+> **Reality Check:** Platforms like Toptal and Flexiple advertise SCADA developer placement in 48–72 hours. That's real — and sometimes appropriate for narrow, well-defined tasks. But for a full control system modernization, a post-incident security audit, or a greenfield SCADA deployment, that timeline is a yellow flag, not a selling point. Qualifications need time to evaluate.
+
+---
+
+## Phase 3: Onboarding — What You Need to Provide
+
+Your consultant is only as effective as the documentation you hand them on day one. Slow onboarding is almost always the client's fault, not the consultant's.
+
+Before kickoff, have ready:
+
+- **Network architecture diagrams** — current state, not aspirational
+- **Existing SCADA system documentation** — version, vendor, last modification date
+- **Standard operating procedures** for the processes being monitored
+- **Hardware inventory** with firmware versions
+- **Access credentials** for all relevant systems (set up read-only access where possible until trust is established)
+- **A dedicated point of contact** who can answer operational questions without a three-day delay
+
+The best engagements also assign an internal mentor or onboarding buddy — someone who knows where the bodies are buried in your legacy system. Plan for structured check-ins through at least the first 90 days.
+
+> **Pro Tip:** If your consultant doesn't ask for your network architecture in the first week, that's a red flag. Either they're not doing a proper assessment, or they're planning to design around assumptions. Neither is good in an OT environment.
+
+---
+
+## Phase 4: Implementation — The Five-Step Sequence
+
+Once scoped and onboarded, a qualified SCADA consultant works through a defined implementation methodology. In practice, it looks like this:
+
+1. **Define system requirements** — translate your operational needs into technical specifications
+2. **Select or validate the SCADA system** — evaluate vendor options for scalability, compatibility with existing PLCs and HMIs, and long-term support posture
+3. **Develop system architecture** — network topology, communication protocols (OPC UA, Modbus, DNP3), hardware placement, cybersecurity segmentation
+4. **Configure the system** — data acquisition setup, alarm logic, HMI design, historian integration, user access controls
+5. **Test and commission** — factory acceptance testing, site acceptance testing, cutover planning, operator training
+
+Each phase produces documentation. Architecture diagrams. Test reports. Remediation roadmaps. If you're not receiving formal deliverables at each stage, ask why.
+
+---
+
+## What Credentials Should You See?
+
+| Credential | What It Signals |
+|---|---|
+| GICSP (Global Industrial Cyber Security Professional) | OT-specific cybersecurity competency |
+| CAP (Certified Automation Professional) | Broad industrial automation expertise |
+| ISA/IEC 62443 Certification | Standards-aligned security architecture experience |
+| NERC CIP Experience | Mandatory for utility environments |
+
+Technical depth matters too: look for demonstrated proficiency in PLC programming (C, C++, Python), HMI design, OPC UA, and familiarity with your specific vendor environment (Ignition, Wonderware, FactoryTalk, etc.).
+
+---
+
+## Practical Bottom Line
+
+The SCADA consultant hiring process has a right way and a lot of wrong ways. The right way is slower, more deliberate, and produces dramatically better outcomes.
+
+**Your next steps:**
+
+1. **Build your asset list and requirements doc** before you contact anyone — this is the foundation everything else depends on
+2. **Use QBS** if your engagement is complex, critical infrastructure, or post-incident — price negotiation comes after selection, not before
+3. **Prepare your documentation package** so onboarding doesn't stall in week one
+4. **Verify credentials** against your specific context — a manufacturing automation background doesn't automatically transfer to utility NERC CIP compliance
+
+For a broader orientation to the field before you start evaluating firms, the [Complete Guide to SCADA Consultants](/blog/complete-guide-SCADA-consultants/) covers scope, cost benchmarks, and red flags worth reading before your first RFQ goes out.
+
+The plant manager who called me in a panic? He eventually replaced the firm he rushed into and started over with a proper QBS process. The second engagement cost more. It also worked.

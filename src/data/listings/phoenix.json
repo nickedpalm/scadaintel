@@ -1,0 +1,93 @@
+[
+  {
+    "slug": "plcs-plus-international-phoenix",
+    "name": "PLC's Plus International",
+    "city": "Phoenix",
+    "state": "AZ",
+    "address": "Not provided in search results",
+    "lat": 33.4484,
+    "lng": -112.074,
+    "phone": "(661) 322-4470",
+    "website": "https://bkppi.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "PLCs, HMI, and SCADA programming company serving Arizona-based businesses",
+    "certifications": [],
+    "services": [
+      "PLC programming",
+      "HMI programming",
+      "SCADA programming"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:11",
+    "sentiment": {
+      "label": "positive",
+      "score": 0.95,
+      "keywords": [
+        "knowledgeable",
+        "fast and efficient",
+        "reliable delivery",
+        "trusted partner",
+        "exceptional service",
+        "on-time and on-budget"
+      ],
+      "highlights": [
+        {
+          "text": "They were fast, efficient, and provided exceptional service. I would definitely work with PLCs Plus again.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "PLCs Plus has been our trusted partner to provide those functions when we need them...delivered on time and on budget.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "After eight years of partnership with them, I can attest to the level of service quality they offered.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Bill Scroggins...was the only Contractor Manager that really delivered for me...built a strong client relationship with me.",
+          "sentiment": "positive"
+        }
+      ],
+      "summary": "PLCs Plus International maintains an excellent reputation for expert SCADA/PLC programming and systems integration, consistently praised by industrial clients for knowledgeable staff, efficient delivery, reliable partnerships, and consistently meeting timelines and budgets."
+    }
+  },
+  {
+    "slug": "ulteig-phoenix",
+    "name": "Ulteig",
+    "city": "Phoenix",
+    "state": "AZ",
+    "address": "Not provided in search results",
+    "lat": 33.4484,
+    "lng": -112.074,
+    "phone": "Not provided in search results",
+    "website": "https://ulteig.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "System integration and SCADA services provider in Phoenix",
+    "certifications": [],
+    "services": [
+      "system integration",
+      "SCADA services"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:11",
+    "sentiment": null
+  }
+]

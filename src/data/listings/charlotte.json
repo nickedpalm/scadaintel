@@ -1,0 +1,153 @@
+[
+  {
+    "slug": "fortech-inc-charlotte",
+    "name": "Fortech, Inc.",
+    "city": "Charlotte",
+    "state": "NC",
+    "address": "2124 Wilkinson Boulevard, Charlotte, NC 28208",
+    "lat": 35.2271,
+    "lng": -80.8431,
+    "phone": "",
+    "website": "",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Service provider for Supervisory Control and Data Acquisition Systems (SCADA).",
+    "certifications": [],
+    "services": [
+      "SCADA services"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:58:19",
+    "sentiment": null
+  },
+  {
+    "slug": "ias-nc-charlotte",
+    "name": "IAS-NC",
+    "city": "Charlotte",
+    "state": "NC",
+    "address": "",
+    "lat": 35.2271,
+    "lng": -80.8431,
+    "phone": "",
+    "website": "https://ias-nc.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Provides HMI/SCADA development and expertise in manufacturing automation, building automation, and information solutions for life sciences.",
+    "certifications": [],
+    "services": [
+      "HMI/SCADA development",
+      "manufacturing automation",
+      "building automation"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:58:19",
+    "sentiment": null
+  },
+  {
+    "slug": "nc-vision-charlotte",
+    "name": "NC-Vision",
+    "city": "Charlotte",
+    "state": "NC",
+    "address": "",
+    "lat": 35.2271,
+    "lng": -80.8431,
+    "phone": "8798341280",
+    "website": "https://nc-vision.com",
+    "email": "info@nc-vision.com",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Provides SCADA systems including software and hardware elements like PLCs and RTUs.",
+    "certifications": [],
+    "services": [
+      "SCADA systems",
+      "PLCs",
+      "RTUs"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:58:19",
+    "sentiment": {
+      "label": "positive",
+      "score": 0.92,
+      "keywords": [
+        "no-code platform",
+        "visual modelling",
+        "easy to learn",
+        "enterprise-grade",
+        "faster development",
+        "cost reduction"
+      ],
+      "highlights": [
+        {
+          "text": "Complete high-level programming environment that is easy to learn",
+          "sentiment": "positive"
+        },
+        {
+          "text": "5-10x lower development time & costs than traditional code",
+          "sentiment": "positive"
+        },
+        {
+          "text": "100% integrated Composition Platform, frontend/backend/edge/cloud",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Full capability to build custom components in no-code",
+          "sentiment": "positive"
+        }
+      ],
+      "summary": "NC-Vision receives strong analyst praise from Omdia as a pure no-code platform offering enterprise-grade flexibility with significantly faster development cycles and dramatically lower costs than traditional coding."
+    }
+  },
+  {
+    "slug": "panoramic-scada-charlotte",
+    "name": "Panoramic SCADA",
+    "city": "Charlotte",
+    "state": "NC",
+    "address": "",
+    "lat": 35.2271,
+    "lng": -80.8431,
+    "phone": "6624330387",
+    "website": "https://www.procore.com/network/p/panoramic-scada-asheville",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Consultant specializing in design and engineering for SCADA systems.",
+    "certifications": [],
+    "services": [
+      "SCADA design",
+      "engineering"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:58:19",
+    "sentiment": null
+  }
+]

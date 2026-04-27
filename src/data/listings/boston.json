@@ -1,0 +1,63 @@
+[
+  {
+    "slug": "jfl-consulting-boston",
+    "name": "JFL Consulting",
+    "city": "Boston",
+    "state": "MA",
+    "address": "",
+    "lat": 42.3601,
+    "lng": -71.0589,
+    "phone": "1168709751",
+    "website": "https://www.jflconsulting.com",
+    "email": "flags@2x.webp",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0.0,
+    "review_count": 0,
+    "description": "Specializes in industrial control systems (ICS) and SCADA security, including threat detection and cyber solutions for critical infrastructure.",
+    "certifications": [],
+    "services": [
+      "ICS/SCADA security",
+      "threat detection",
+      "cyber protection"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:58:09",
+    "sentiment": null
+  },
+  {
+    "slug": "scada-network-services-inc-boston",
+    "name": "SCADA Network Services, Inc.",
+    "city": "Boston",
+    "state": "MA",
+    "address": "",
+    "lat": 42.3601,
+    "lng": -71.0589,
+    "phone": "",
+    "website": "https://scadanetsvc.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0.0,
+    "review_count": 0,
+    "description": "Provides a wide variety of high-quality SCADA and control systems services since 2006.",
+    "certifications": [],
+    "services": [
+      "SCADA services",
+      "control systems"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:58:09",
+    "sentiment": null
+  }
+]

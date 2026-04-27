@@ -1,0 +1,100 @@
+---
+title: "How to Choose an SCADA Consultant: What Nobody Tells You"
+description: "Hiring the wrong SCADA consultant costs more than the lowest bid saves — how to check vertical experience, cybersecurity, and support before you sign."
+pubDate: 2026-04-26
+author: "Nick Palmer"
+tags: ["SCADA consultant", "guide", "tips"]
+hub: "The Complete Guide to SCADA Consultants"
+---
+
+Three months into a water treatment modernization project, my client's plant manager called me with that particular tone — the one where someone is trying very hard not to say "I told you so." The integrator they'd hired on the lowest bid had just admitted they'd never actually deployed SCADA on a system with more than twelve I/O points. Their municipal treatment facility had four hundred.
+
+The integrator wasn't fraudulent. They just weren't qualified. And nobody had asked the right questions before signing the contract.
+
+> **The Short Version:** The difference between a great SCADA consultant and a disaster is almost never visible in a proposal. It lives in their industry-specific track record, their cybersecurity posture, and whether they'll support you at 2am six months after go-live. Ask about all three before you sign anything.
+
+**Key Takeaways**
+- Certifications matter, but vertical experience matters more — a Rockwell Silver Tier partner who's never touched water/wastewater is the wrong call for a water utility
+- Cybersecurity is no longer optional; if a consultant can't explain NIST SP 800-82 and IEC 62443 in plain language, walk away
+- The public sector uses Qualification-Based Selection (QBS) for good reason — the private sector's habit of defaulting to lowest bid consistently produces suboptimal results
+- Training and documentation must be in the standard scope, not an add-on you negotiate for later
+
+---
+
+## The Villain Nobody Warns You About: Single-Vendor Bias
+
+Most SCADA integrators have preferred platforms. That's normal. The problem is when "preferred" becomes "the only one we know," and suddenly your application requirements get shoehorned into whatever stack the integrator is most comfortable with — Rockwell, Siemens, Schneider Electric, ABB, Honeywell, it doesn't matter which.
+
+Here's what most people miss: vendor certifications and vendor neutrality are both important, and they're in tension. You want someone with real platform credentials (Rockwell Automation's Silver Tier status, for example, requires technical competency, factory-trained staff, and documented quality systems — it's not a rubber stamp). But you also want someone who can tell you honestly when a different platform better fits your application.
+
+The question to ask: *"Can you show me a project where you recommended a different platform than your primary certification, and why?"*
+
+If they can't, that's a red flag.
+
+---
+
+## The 7 Questions That Actually Separate Good Consultants From Bad Ones
+
+These are designed for featured-snippet extraction, but more importantly, they're designed to make a dishonest consultant uncomfortable.
+
+1. **What's your documented track record in my specific vertical?** (Water/wastewater, oil & gas, food & beverage, and manufacturing each have different compliance requirements — ISA 18.2 alarm management, 21 CFR Part 11 for FDA-regulated facilities, PackML for food/bev)
+2. **Walk me through your cybersecurity strategy for IT/OT network segmentation.** (They should mention NIST SP 800-82, IEC 62443, role-based access control, encrypted communications, and patch management without you prompting them)
+3. **What's your 24/7 emergency support structure, and do you subcontract any of that work?**
+4. **Can I speak directly to three clients from projects in the last two years?** (Not references they curated — clients you choose from a list)
+5. **How do you handle scope documentation submittals and change orders?**
+6. **Is operator training and system documentation included in your standard scope or quoted separately?**
+7. **How do you approach scalability and redundancy — what happens when the system needs to grow?**
+
+That last one matters more than it sounds. Total Cost of Ownership on HMI/SCADA systems isn't just the implementation price — it's every painful, expensive limitation you'll hit three years from now because nobody thought about OPC UA compliance or northbound/southbound protocol flexibility at the design stage.
+
+---
+
+## Certified vs. Uncertified: What the Credentials Actually Mean
+
+| Credential | What It Signals | What It Doesn't Guarantee |
+|---|---|---|
+| GICSP (Global Industrial Cyber Security Professional) | OT/ICS cybersecurity knowledge | Implementation experience |
+| CAP (Certified Automation Professional) | Broad automation competency | Industry vertical expertise |
+| ISA/IEC 62443 Specialist | Industrial cybersecurity standards | Hands-on system integration |
+| Rockwell Silver/Gold Tier | Platform training + quality systems | Vendor-agnostic thinking |
+| Siemens/Schneider/ABB Partner | Platform-specific deployment skills | Cross-platform flexibility |
+
+> **Reality Check:** A consultant with zero certifications but ten documented water treatment deployments will almost always outperform a credentialed generalist on your water treatment project. Certifications are a floor, not a ceiling. Look at the project list first.
+
+---
+
+## The QBS Framework (And Why Private Sector Ignores It at Their Peril)
+
+The public sector has a formal process called Qualification-Based Selection. It's ten steps: define your scope, assets, parameters, and required features; issue an RFQ; evaluate, interview, and rank firms on qualifications alone; then negotiate scope and fee with your top-ranked firm. If you can't agree, move to number two.
+
+The critical insight is the order of operations — you rank on qualifications *before* you discuss money. This produces better long-term outcomes than lowest-bid procurement, which is exactly why municipal utilities mandate it.
+
+Private sector facilities routinely skip the upfront specification work, which means integrators bid on vague scopes and the selection devolves into a price comparison between proposals that aren't even measuring the same thing. If your team lacks the technical resources to write solid specs, hire an independent consultant just for that step. The cost is trivial compared to what a misaligned integration costs.
+
+> **Pro Tip:** If you're a smaller operation without in-house controls engineering staff, consider separating your consultant engagement into two phases: (1) a paid spec and vendor-selection engagement, then (2) a separate implementation contract. The independence prevents scope capture.
+
+---
+
+## The Cybersecurity Litmus Test
+
+SCADA cyberattacks have increased year-over-year with no sign of slowing. This isn't hypothetical anymore — it's an operational risk your insurer, your regulator, and your board care about.
+
+When you're evaluating consultants, cybersecurity posture is now a disqualifying criterion, not a differentiating one. If they can't clearly articulate how they implement network segmentation between your IT and OT environments, how they handle patch management on legacy PLCs, and what their incident response hand-off looks like — they're not qualified for modern critical infrastructure work. Full stop.
+
+Ask them to name the specific standards framework they use. NIST SP 800-82 for general ICS guidance, IEC 62443 for industrial cybersecurity. If those terms don't come up naturally, you have your answer.
+
+---
+
+## Practical Bottom Line
+
+Start with the [Complete Guide to SCADA Consultants](/blog/complete-guide-SCADA-consultants/) if you're still getting oriented. Once you're ready to evaluate specific firms, here's the sequence:
+
+1. Define your scope, assets, and must-have features in writing before you contact anyone
+2. Build a short list of three to five firms with documented vertical experience in your industry
+3. Run the seven questions above as a structured interview, not a casual conversation
+4. Check references you select, not references they provide
+5. Rank on qualifications first — then negotiate price with your top choice
+
+The lowest bid almost never reflects the real cost. The consultant who charges more because they'll actually support you at 2am on a Tuesday, document everything, and train your operators properly is the cheaper option when you do the full math.
+
+Everything else is a proposal that looks good on paper.

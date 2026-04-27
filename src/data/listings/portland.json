@@ -1,0 +1,216 @@
+[
+  {
+    "slug": "control-systems-nw-portland",
+    "name": "Control Systems NW",
+    "city": "Portland",
+    "state": "OR",
+    "address": "",
+    "lat": 45.5152,
+    "lng": -122.6784,
+    "phone": "",
+    "website": "https://www.controlsystemsnw.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Provides control system design and integration services for public works and industrial clients in the Pacific Northwest.",
+    "certifications": [],
+    "services": [
+      "Control system design",
+      "integration",
+      "electrical/controls/software support"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:58",
+    "sentiment": null
+  },
+  {
+    "slug": "landis-consulting-engineering-portland",
+    "name": "Landis Consulting Engineering",
+    "city": "Portland",
+    "state": "OR",
+    "address": "",
+    "lat": 45.5152,
+    "lng": -122.6784,
+    "phone": "(503) 584-1576",
+    "website": "https://landisconsulting.com",
+    "email": "ben_perry@landisconsulting.com",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Offers electrical instrumentation & control design including SCADA and telemetry for water & wastewater systems.",
+    "certifications": [],
+    "services": [
+      "Electrical instrumentation & control design",
+      "SCADA and telemetry design",
+      "Division 26/27/28 design"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:58",
+    "sentiment": {
+      "label": "positive",
+      "score": 0.98,
+      "keywords": [
+        "quality",
+        "deadline-driven",
+        "cost-effective",
+        "professional",
+        "reliable",
+        "expert"
+      ],
+      "highlights": [
+        {
+          "text": "I would call Landis first with any electrical or related system issue, either in design or operation.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Landis provides a higher level of construction period, start up & testing, commissioning, and post construction documentation than I have received from other firms.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Met every schedule deadline. The attention to detail and ability to stay within our design budget has been fantastic.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "I truly appreciated the expert advice and guidance through this very complicated project.",
+          "sentiment": "positive"
+        }
+      ],
+      "summary": "Landis Consulting Engineering has an exceptionally strong reputation for delivering high-quality engineering services on schedule and within budget, with clients consistently praising their professional expertise, cost-saving approach, and superior customer service across complex projects."
+    }
+  },
+  {
+    "slug": "ocd-automation-portland",
+    "name": "OCD Automation",
+    "city": "Portland",
+    "state": "OR",
+    "address": "",
+    "lat": 45.5152,
+    "lng": -122.6784,
+    "phone": "231123-2007",
+    "website": "https://www.ocdautomation.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Specializes in PLC programming, SCADA & HMI programming, and controls design in the Pacific Northwest.",
+    "certifications": [],
+    "services": [
+      "PLC programming",
+      "SCADA & HMI programming",
+      "controls design"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:58",
+    "sentiment": null
+  },
+  {
+    "slug": "olsson-industrial-electric-portland",
+    "name": "Olsson Industrial Electric",
+    "city": "Portland",
+    "state": "OR",
+    "address": "",
+    "lat": 45.5152,
+    "lng": -122.6784,
+    "phone": "",
+    "website": "https://olssonelec.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Offers SCADA systems programming with over 30 years of experience in industrial projects.",
+    "certifications": [],
+    "services": [
+      "SCADA systems programming",
+      "industrial electric solutions"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:58",
+    "sentiment": null
+  },
+  {
+    "slug": "plcs-plus-international-portland",
+    "name": "PLC's Plus International",
+    "city": "Portland",
+    "state": "OR",
+    "address": "",
+    "lat": 45.5152,
+    "lng": -122.6784,
+    "phone": "1661322447",
+    "website": "https://bkppi.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Provides PLCs, HMI, and SCADA programming services for Oregon-based businesses of any project size.",
+    "certifications": [],
+    "services": [
+      "PLCs programming",
+      "HMI programming",
+      "SCADA programming"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:58",
+    "sentiment": {
+      "label": "positive",
+      "score": 0.98,
+      "keywords": [
+        "knowledgeable",
+        "fast and efficient",
+        "trusted partner",
+        "on-time and on-budget",
+        "exemplary service",
+        "strong relationships"
+      ],
+      "highlights": [
+        {
+          "text": "fast, efficient, and provided exceptional service. I would definitely work with PLCs Plus again",
+          "sentiment": "positive"
+        },
+        {
+          "text": "delivered on time and on budget. We're very happy to have PLCs Plus as our partner",
+          "sentiment": "positive"
+        },
+        {
+          "text": "After eight years of partnership, I firmly believe your company will benefit from doing business with them",
+          "sentiment": "positive"
+        },
+        {
+          "text": "the only Contractor Manager that really delivered for me. Built a strong client relationship",
+          "sentiment": "positive"
+        }
+      ],
+      "summary": "PLCs Plus International has exceptionally strong reviews across multiple industries, with clients praising their technical expertise, reliability, on-time delivery, and long-term partnership value."
+    }
+  }
+]

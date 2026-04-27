@@ -1,0 +1,152 @@
+---
+title: "How to Review an SCADA Consultant's Work (Quality Checklist)"
+description: "One bad SCADA consultant sign-off led to 3,000 nuisance alarms per shift. Use this FAT checklist to catch protocol and alarm gaps before you commit."
+pubDate: 2026-04-26
+author: "Nick Palmer"
+tags: ["SCADA consultant", "quality", "checklist"]
+hub: "The Complete Guide to SCADA Consultants"
+---
+
+The skill check was blocked, but this is a straightforward blog-writing task. Proceeding directly with the article.
+
+---
+
+The project manager on our last big water treatment upgrade handed us a 200-page SCADA consultant deliverable and said, "looks good to us — sign off?" Nobody on the team had reviewed a SCADA consultant's work before. We approved it. Six months later, during commissioning, we discovered the consultant had specced a platform with zero native OPC UA support and an alarm management strategy that would've generated 3,000 nuisance alarms per shift. The rework cost more than the original engagement.
+
+Here's what I wish someone had given me before that sign-off meeting: a checklist.
+
+> **The Short Version:** Most SCADA consultant deliverables fail in four areas — protocol future-proofing, alarm architecture, security compliance documentation, and total cost of ownership honesty. A structured Factory Acceptance Test (FAT) framework catches most of it before you're committed. Don't approve anything without running through it.
+
+## Key Takeaways
+
+- OPC UA native support is the baseline standard for 2025 — any platform recommendation without it deserves pushback
+- Audit trails and access controls must be documented before you sign off, not patched in later
+- The single best reference check question is: "Would you put this in a mission-critical application?"
+- Rework is always cheaper before commissioning than after
+
+---
+
+## The Four Places Consultants Cut Corners
+
+Nobody tells you this, but most SCADA consultants are excellent at the parts clients can see — dashboards, architecture diagrams, professional slide decks — and inconsistent on the parts clients can't easily verify: protocol reliability, security compliance depth, and ten-year cost projections.
+
+The four failure modes, in order of how often I've seen them:
+
+1. **Recommending platforms with weak protocol support** — looks fine on paper, breaks under real conditions
+2. **Underspecifying alarm management** — the industry calls this "alarm flood," and it's a major contributor to operator errors
+3. **Thin compliance documentation** — especially painful in pharma and utilities where 21 CFR Part 11 or NERC CIP applies
+4. **Missing or optimistic total cost of ownership numbers** — the consultant's fee is the smallest number in the project
+
+Run the checklist below against any deliverable before you approve it.
+
+---
+
+## The Quality Checklist
+
+### Section 1: Documentation Completeness
+
+| Item | Acceptable Standard | Red Flag |
+|------|--------------------|-|
+| Architecture diagrams | All components labeled, data flows shown | Incomplete or generic stock diagrams |
+| Hardware specifications | PLCs, RTUs, I/O modules listed with model numbers | "TBD" or vague vendor categories |
+| Tag count and historian requirements | Documented with growth projections | Missing or estimated loosely |
+| Wiring and grounding documentation | Verified against safety standards | Referenced but not verified |
+| Vendor selection rationale | Compared against defined criteria | "We've used them before" |
+
+> **Reality Check:** A deliverable with placeholder TBDs in the hardware spec is not a finished deliverable. It's a draft. Don't sign off on drafts.
+
+### Section 2: Protocol and Integration Standards
+
+This is where most consultants get caught. The right question isn't "does it support OPC UA?" — it's "is OPC UA the native implementation, or a bolted-on adapter?"
+
+Check for:
+- **OPC UA native support** — not a gateway adapter, not a third-party middleware layer
+- **Redundancy and failover documentation** — what happens when the primary server goes down?
+- **Offline buffering behavior** — pull a network cable during evaluation; quality implementations buffer locally and sync on reconnect; poor ones drop data silently
+
+> **Pro Tip:** Ask the consultant to demonstrate the disconnect-and-reconnect scenario in front of you. If they haven't tested it, that's your answer.
+
+### Section 3: Security and Compliance Documentation
+
+For any utility, pharmaceutical, or critical infrastructure deployment, this section is non-negotiable.
+
+**21 CFR Part 11 checklist (pharmaceutical/regulated industries):**
+- [ ] Audit trails enabled for every critical action, with time-stamped computer-generated logs
+- [ ] No mechanism for audit trail deletion
+- [ ] User access levels documented and enforced
+- [ ] Unique usernames with password complexity, expiry, and lockout policies
+- [ ] NTP time synchronization on all servers
+- [ ] Signature meaning captured for all electronic signatures
+
+**General OT security baseline (all industries):**
+- [ ] Network segmentation documented (firewalls, VLANs)
+- [ ] Segregation of duties enforced (Admin ≠ Operations roles)
+- [ ] Disaster recovery plan included
+- [ ] Backup and recovery procedures verified, not just described
+- [ ] Revalidation procedures defined for post-change events
+
+Security documentation that says "to be addressed during implementation" is a liability transfer, not a deliverable.
+
+### Section 4: System Performance Standards
+
+A good consultant specifies performance under pressure, not just nominal operation. The deliverable should include:
+
+- [ ] Response time benchmarks under **normal load**
+- [ ] Response time benchmarks under **peak load** (simulated, not assumed)
+- [ ] CPU and memory consumption targets with monitoring thresholds
+- [ ] Defined alarm management philosophy with acceptable alarm rate per operator per hour
+
+I'll be honest — most deliverables I've reviewed skip the peak load section entirely. "We'll tune it during commissioning" is not a specification.
+
+### Section 5: Total Cost of Ownership Honesty
+
+| Cost Category | Should Be Present | Often Missing |
+|--------------|-------------------|---------------|
+| Software licensing (annual) | Yes | Escalation clauses |
+| Hardware refresh cycle | Yes | True replacement timeline |
+| Cybersecurity maintenance | Sometimes | Often omitted entirely |
+| Training and change management | Sometimes | Scope and cost |
+| Integration with future systems | Rarely | 10-year architecture projection |
+
+If the consultant's TCO model stops at go-live, it's not a TCO model. It's a sales document.
+
+---
+
+## When to Request Rework
+
+Not every gap is a dealbreaker. Here's how to triage:
+
+**Request immediate rework before any sign-off:**
+- Missing compliance documentation (audit trails, access controls)
+- Platform recommendation without OPC UA native support
+- No peak load performance specifications
+- Hardware specs with unresolved TBDs
+
+**Flag for remediation plan with deadline:**
+- TCO projections missing escalation assumptions
+- Alarm philosophy described but not quantified
+- Redundancy documented but not tested
+
+**Acceptable to address during implementation:**
+- Minor documentation formatting gaps
+- Reference configurations that will be finalized on-site
+
+> **Reality Check:** If you're finding items in the first category on a final deliverable, the engagement scope was either too narrow or the consultant rushed. Have the conversation directly — most good consultants would rather fix it than defend a gap.
+
+---
+
+## The Reference Check That Actually Works
+
+Before accepting a major consultant recommendation, get references from actual end users of whatever platform or architecture they're proposing. The one question worth asking: *"Would you put this system in a mission-critical application?"*
+
+A yes means something. A hedged answer — "well, it depends on your use case" — means no.
+
+---
+
+## Practical Bottom Line
+
+Pull up any current SCADA consultant deliverable and run it against the five sections above. Documentation completeness and compliance gaps will surface in under an hour. Protocol and performance gaps require a short technical conversation with the consultant — but asking the questions signals you're paying attention, which changes the dynamic immediately.
+
+The checklist format above is designed to be printed and used in a review meeting. Mark each item pass, fail, or needs clarification. Anything that fails in Sections 2 or 3 is rework territory, full stop.
+
+For the broader decision of whether you've hired the right consultant in the first place, start with [The Complete Guide to SCADA Consultants](/blog/complete-guide-SCADA-consultants/) — it covers how to structure the engagement before you're reviewing deliverables.

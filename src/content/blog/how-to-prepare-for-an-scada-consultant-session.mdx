@@ -1,0 +1,124 @@
+---
+title: "How to Prepare for an SCADA Consultant Session (Plant Engineers And Utilitie's Checklist)"
+description: "Prepare your SCADA consultant session right: bring network diagrams, stakeholder roster, and use cases — or pay $200+/hr for avoidable discovery work."
+pubDate: 2026-04-26
+author: "Nick Palmer"
+tags: ["SCADA consultant", "preparation", "checklist"]
+hub: "The Complete Guide to SCADA Consultants"
+---
+
+No skills needed here — this is a straightforward content writing task. Writing the article now.
+
+---
+
+The project manager from the water authority called me on a Tuesday afternoon, three weeks before their SCADA consultant was scheduled to arrive. She'd spent months securing budget approval, gotten sign-off from the operations director, and booked a certified ISA/IEC 62443 specialist with a six-week backlog. And now she was asking me what she needed to have ready.
+
+She had nothing. No network diagrams. No stakeholder list. No documented compliance requirements. The consultant was going to bill at $200+ an hour to watch her IT team scramble for documentation that should have been assembled in October.
+
+Here's the thing: SCADA consultants are not miracle workers who arrive, assess your chaos, and hand you a roadmap. The best sessions are structured collaborations — and the preparation burden falls entirely on you.
+
+> **The Short Version:** Arrive at your SCADA consultant session with a stakeholder roster, current network topology docs, at least three documented use cases for triage, your compliance requirements, and baseline metrics for pilot measurement. Without these, you're paying consultant rates for discovery work you could have done yourself.
+
+## Key Takeaways
+
+- Stakeholder alignment before the session prevents post-consultation implementation paralysis
+- Consultants run triage exercises scoring use cases on feasibility × impact × risk — you need candidates ready
+- Data governance documentation (what stays offline, what flows into systems) is the most commonly skipped prep item
+- Multi-jurisdiction utilities must bring region-specific regulatory documentation, ideally with legal counsel present
+
+---
+
+## Why Most Sessions Underdeliver
+
+Nobody tells you this: a SCADA consultant's value isn't in discovering your problems. It's in solving problems you've already defined clearly enough to discuss. Most organizations walk in hoping the consultant will figure out what they need. The result is a session that burns half its time on discovery, produces vague recommendations, and generates a follow-up engagement.
+
+The villain here is a very common assumption — that "hiring the expert" transfers the preparation burden. It doesn't.
+
+> **Reality Check:** Consultant-led SCADA sessions that lack pre-defined use cases almost always produce "one-off demos that die after the workshop" rather than sequenced pilot backlogs with clear ownership.
+
+---
+
+## The Preparation Checklist
+
+### Phase 1: Stakeholder Alignment (2–3 weeks before)
+
+**1. Build your stakeholder map.**
+Identify sponsors (who controls budget), risk owners (who signs off on cybersecurity decisions), and practitioners (engineers who will actually operate the system). All three categories need representation in the room. A session attended only by IT misses operational context. A session attended only by operations misses cybersecurity authority.
+
+**2. Confirm decision-making authority is present.**
+If the person who can approve next steps isn't in the session, your consultant produces a document that sits in someone's inbox for six months.
+
+**3. Identify your compliance requirements.**
+For utilities operating across multiple states or countries: document each jurisdiction's relevant standards (NERC CIP for bulk electric, EPA/state requirements for water/wastewater, ISA/IEC 62443 for industrial). Bring legal counsel for multi-jurisdiction sessions — compliance red-team readouts are a standard consultant exercise, and you want authority in the room.
+
+---
+
+### Phase 2: Infrastructure Documentation (2 weeks before)
+
+**4. Current network topology diagram.**
+Not the ideal topology — the actual one. Include OT/IT network boundaries, existing PLCs and HMIs, communication protocols (Modbus, DNP3, OPC), and any remote access configurations. If you don't have this, have your operations team document it before the session.
+
+**5. Hardware and software inventory.**
+List existing control system components, ages, firmware versions, and vendor support status. This enables the consultant to immediately flag end-of-life equipment and scope modernization requirements.
+
+**6. Document your data boundaries.**
+What operational data can flow into connected systems? What must remain air-gapped or offline? This isn't a policy decision you make in the session — it's a governance decision that requires prior internal alignment. Arriving without this forces the consultant to mediate an internal debate on your dime.
+
+> **Pro Tip:** If your organization hasn't had an explicit conversation about data classification for OT systems, schedule that internal meeting before your consultant session. Consultants cannot resolve organizational disagreements about what data is sensitive.
+
+---
+
+### Phase 3: Use Case Development (1–2 weeks before)
+
+**7. Prepare at least three candidate use cases for triage.**
+Consultants run structured triage exercises scoring use cases on feasibility × impact × risk. You need candidates ready — not hypothetical ones. These should be real operational pain points: anomaly detection on a specific turbine, alarm rationalization for a water treatment line, network segmentation after a security audit finding.
+
+**8. Document your pilot scorecard framework.**
+For each use case, define: the hypothesis you're testing, baseline metrics you'll measure against, and kill criteria (what would cause you to stop the pilot). Organizations that arrive without this end up with consultant recommendations that have no measurement framework — and no way to prove ROI.
+
+| Preparation Item | Time Required | Consequence If Missing |
+|---|---|---|
+| Stakeholder map | 2–4 hours | Decision paralysis post-session |
+| Network topology docs | 1–3 days | Session time spent on discovery |
+| Data boundary definition | Internal meeting | Consultant mediates internal debate |
+| Three triage use cases | 2–4 hours | Generic recommendations, no pilot |
+| Compliance requirements | 1–2 days | Red-team exercise lacks authority |
+| Pilot scorecard | 2 hours | No measurement framework for ROI |
+| Budget/timeline constraints | 1 hour | Recommendations miss feasibility |
+
+---
+
+### Phase 4: Governance and Risk Framework (1 week before)
+
+**9. Document your acceptable use policies.**
+This means logging requirements, escalation procedures, and human review protocols for any system outputs that inform operational or customer-facing decisions. Consultants need this to scope audit trail requirements into their architecture recommendations.
+
+**10. Prepare a golden dataset for evaluation.**
+Small, representative samples of your actual operational data — not synthetic examples — allow consultants to evaluate proposed configurations against real conditions. If data sensitivity prevents sharing, document the characteristics of your data (volume, frequency, edge cases) in enough detail to be useful.
+
+**11. Bring budget and timeline constraints explicitly.**
+Not a range. Not "we're flexible." A real number and a real deadline. Consultants who don't know your constraints will recommend the architecturally correct solution, not the feasible one.
+
+---
+
+## What Happens in the Session
+
+Expect your consultant to run: a triage exercise on your use cases (scoring feasibility × impact × risk), a compliance red-team readout (testing your regulatory assumptions against proposed architecture), and a vendor evaluation framework if you're comparing integrators or hardware vendors. All three exercises produce better outputs when you've done the preparation above.
+
+Post-session, implementation proceeds through architecture development, system configuration, testing and commissioning, and training deployment — in that sequence. Skipping preparation doesn't compress the timeline; it just pushes discovery into the expensive phase.
+
+> **Reality Check:** Hands-on system demonstrations and network diagram exercises are the most consistently cited gap in SCADA training and implementation. Arrive with your diagrams already drawn.
+
+---
+
+## Practical Bottom Line
+
+If you're scheduling a SCADA consultant session in the next 30 days, start with the stakeholder map and the network topology documentation. Those two items unlock every other conversation. If either requires internal alignment first, surface that now — not in the session.
+
+Your consultant's job is to solve defined problems at expert speed. Your job is to arrive with the problems defined.
+
+For a broader overview of how to evaluate and hire the right specialist for your project, start with [The Complete Guide to SCADA Consultants](/blog/complete-guide-SCADA-consultants/). If you're working through a post-incident assessment or planning a cybersecurity audit, the preparation framework above applies directly — the triage and governance steps are identical regardless of engagement type.
+
+The water authority project manager, for what it's worth, rescheduled her session by two weeks. Showed up with a network diagram, a stakeholder list, and three use cases scored by her operations team. The consultant spent the entire session on architecture. They had a pilot running six weeks later.
+
+Preparation isn't bureaucracy. It's what turns an expensive meeting into a working system.

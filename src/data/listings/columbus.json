@@ -1,0 +1,125 @@
+[
+  {
+    "slug": "ic-scada-columbus",
+    "name": "IC-SCADA",
+    "city": "Columbus",
+    "state": "OH",
+    "address": "",
+    "lat": 39.9612,
+    "lng": -82.9988,
+    "phone": "",
+    "website": "https://www.ic-scada.biz",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Provider of next-gen SCADA, control, and OT solutions with consulting services focused on analyzing infrastructure, strategic planning, software implementation, tech support, and system integration.",
+    "certifications": [],
+    "services": [
+      "SCADA consulting",
+      "OT strategies",
+      "system integration"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:57:41",
+    "sentiment": null
+  },
+  {
+    "slug": "pro-tech-systems-group-columbus",
+    "name": "Pro-Tech Systems Group",
+    "city": "Columbus",
+    "state": "OH",
+    "address": "",
+    "lat": 39.9612,
+    "lng": -82.9988,
+    "phone": "(330) 773-9828",
+    "website": "https://www.pteinc.com",
+    "email": "marketing@pteinc.com",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Expert industrial automation and control systems integration providing process automation, SCADA monitoring systems, custom control systems, easy-to-use software, and 3D scanning using IIoT for real-time data.",
+    "certifications": [],
+    "services": [
+      "process automation",
+      "SCADA monitoring",
+      "custom control systems"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:57:41",
+    "sentiment": {
+      "label": "positive",
+      "score": 0.95,
+      "keywords": [
+        "24/7 availability",
+        "customer service",
+        "quality",
+        "reliability",
+        "consistency",
+        "responsive"
+      ],
+      "highlights": [
+        {
+          "text": "Customer service is second to none",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Pro-Tech Systems Group has been there for my plants whenever we needed them, 24/7",
+          "sentiment": "positive"
+        },
+        {
+          "text": "We have even called them on a Christmas Day and they helped us get back online",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Big or small projects we get the same top quality and service",
+          "sentiment": "positive"
+        }
+      ],
+      "summary": "Pro-Tech Systems Group has an excellent reputation for dependable 24/7 support, consistent quality service, and industry-leading customer responsiveness across all project sizes."
+    }
+  },
+  {
+    "slug": "team-uis-columbus",
+    "name": "Team UIS",
+    "city": "Columbus",
+    "state": "OH",
+    "address": "",
+    "lat": 39.9612,
+    "lng": -82.9988,
+    "phone": "(800) 277-5740",
+    "website": "https://teamuis.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Utilities Instrumentation Service specializing in UIS SCADA, renewable power, and electrical studies.",
+    "certifications": [],
+    "services": [
+      "SCADA",
+      "utilities instrumentation",
+      "renewable power"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:57:41",
+    "sentiment": null
+  }
+]

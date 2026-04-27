@@ -1,0 +1,164 @@
+generated_at: '2026-04-27T02:40:39+00:00'
+refs:
+  cf.d1_db:
+    extra:
+      binding_name: LEADS_DB
+    id: 0fc7b50a-adf1-4ef9-96a8-9772be2399bd
+    kind: cf.d1_db
+    name: directory_scadaintel
+  cf.dns_records:
+    extra:
+      content: scadaintel.pages.dev
+      zone_id: c2076a7923b3e6a72e57c2e0ff96e8e9
+    id: 3687958b7c53ce8f669cecc4aef625ac
+    kind: cf.dns_records
+    name: scadaintel.com
+  cf.email_routing:
+    extra:
+      enabled: true
+    id: c2076a7923b3e6a72e57c2e0ff96e8e9
+    kind: cf.email_routing
+    name: scadaintel.com
+  cf.pages_project:
+    extra:
+      subdomain: scadaintel.pages.dev
+    id: scadaintel
+    kind: cf.pages_project
+    name: scadaintel
+  cf.r2_bucket:
+    extra:
+      binding_name: PHOTOS
+    id: scadaintel-photos
+    kind: cf.r2_bucket
+    name: scadaintel-photos
+  cf.turnstile:
+    extra:
+      secret: ''
+    id: 0x4AAAAAADD-sKRL1tR_pFga
+    kind: cf.turnstile
+    name: scadaintel
+  content.enrich:
+    extra:
+      exported: 96
+    id: /home/nick/directory-factory/factory/verticals/scadaintel/src/data/listings
+    kind: content.enrich
+    name: scadaintel
+  content.faqs:
+    extra:
+      count: 12
+    id: /home/nick/directory-factory/factory/verticals/scadaintel/src/data/faqs.json
+    kind: content.faqs
+    name: scadaintel
+  content.generate:
+    extra:
+      blog_posts: 27
+      cities: 43
+    id: /home/nick/directory-factory/factory/verticals/scadaintel/src/content
+    kind: content.generate
+    name: scadaintel
+  content.images:
+    extra:
+      articles: '27'
+      cities: '68'
+    id: /home/nick/directory-factory/factory/verticals/scadaintel/images.json
+    kind: content.images
+    name: scadaintel
+  content.interlink:
+    extra:
+      stamp_mtime: '1777233619.3497753'
+    id: /home/nick/directory-factory/factory/verticals/scadaintel/.interlink-stamp
+    kind: content.interlink
+    name: scadaintel
+  content.lead_magnets:
+    extra:
+      count: 3
+    id: /home/nick/directory-factory/factory/verticals/scadaintel/src/data/guides.json
+    kind: content.lead_magnets
+    name: scadaintel
+  content.scrape:
+    extra:
+      count: 96
+    id: /home/nick/directory-factory/factory/verticals/scadaintel/pipeline.db
+    kind: content.scrape
+    name: scadaintel
+  d1.migrations:
+    extra:
+      applied: 8
+    id: directory_scadaintel
+    kind: d1.migrations
+    name: scadaintel
+  ga4.property:
+    extra:
+      measurement_id: G-QDMHPT9FBG
+    id: G-QDMHPT9FBG
+    kind: ga4.property
+    name: scadaintel
+  github.repo:
+    extra: {}
+    id: nickedpalm/scadaintel
+    kind: github.repo
+    name: nickedpalm/scadaintel
+  gsc.verify:
+    extra:
+      api_verified: true
+      content: google-site-verification=0__0rl6CxfkB2LlMHB6R7OgXzUNg2kKniUbBRR8WEPY
+    id: d21e11c93b2cfbf7507fe8abc6ad023d
+    kind: gsc.verify
+    name: scadaintel.com
+  listmonk.api_user:
+    extra:
+      password: weA1z-XU2exk_QWWDt7JJYmBp83kAp8p
+    id: scadaintel-api
+    kind: listmonk.api_user
+    name: scadaintel-api
+  listmonk.list:
+    extra: {}
+    id: '62'
+    kind: listmonk.list
+    name: SCADAIntel Newsletter
+  listmonk.templates:
+    extra:
+      guide_delivery: '64'
+      lead_notify: '63'
+      magic_link: '62'
+    id: 62,63,64
+    kind: listmonk.templates
+    name: scadaintel
+  local.colors:
+    extra:
+      primary: '#ed5d12'
+    id: /home/nick/directory-factory/factory/verticals/scadaintel/colors.json
+    kind: local.colors
+    name: scadaintel
+  local.logos:
+    extra:
+      copied: 11
+    id: /home/nick/directory-factory/factory/verticals/scadaintel/public
+    kind: local.logos
+    name: scadaintel
+  local.scaffold:
+    extra:
+      domain: scadaintel.com
+    id: /home/nick/directory-factory/factory/verticals/scadaintel/vertical.json
+    kind: local.scaffold
+    name: scadaintel
+  local.template_sync:
+    extra:
+      count: '20'
+      synced: src/components,src/pages,src/layouts,src/utils,src/lib,src/scripts,src/types,src/assets/styles,src/assets/fonts,_functions,migrations,src/config.ts,src/env.d.ts,src/types.d.ts,src/navigation.ts,astro.config.ts,tailwind.config.js,tsconfig.json,public/_headers,public/_redirects
+    id: /home/nick/directory-factory/factory/verticals/scadaintel
+    kind: local.template_sync
+    name: scadaintel
+  ses.domain_verify:
+    extra:
+      dkim_count: 3
+    id: scadaintel.com
+    kind: ses.domain_verify
+    name: scadaintel.com
+  stripe.sync:
+    extra:
+      city_pro_product_id: prod_UFN2TmA69dbm54
+      featured_product_id: prod_UFN2qKsjabkruB
+    id: prod_UFN2qKsjabkruB
+    kind: stripe.sync
+    name: scadaintel

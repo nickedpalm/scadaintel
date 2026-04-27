@@ -1,0 +1,66 @@
+---
+interface Pin {
+  lat: number;
+  lng: number;
+  name: string;
+  slug: string;
+}
+
+interface Props {
+  pins: Pin[];
+  centerLat: number;
+  centerLng: number;
+  zoom?: number;
+}
+
+const { pins, centerLat, centerLng, zoom = 11 } = Astro.props;
+---
+<div class="card overflow-hidden">
+  <div
+    id="city-map"
+    class="h-80 w-full"
+    data-center-lat={centerLat}
+    data-center-lng={centerLng}
+    data-zoom={zoom}
+    data-pins={JSON.stringify(pins)}
+  ></div>
+</div>
+
+<link rel="stylesheet" href="/vendor/leaflet/leaflet.css" />
+<script is:inline src="/vendor/leaflet/leaflet.js"></script>
+<script is:inline>
+  function initCityMap() {
+    var el = document.getElementById('city-map');
+    if (!el || el.dataset.init) return;
+    el.dataset.init = 'true';
+    var lat = parseFloat(el.dataset.centerLat);
+    var lng = parseFloat(el.dataset.centerLng);
+    var zoom = parseInt(el.dataset.zoom);
+    var pins = JSON.parse(el.dataset.pins || '[]').filter(function(p) {
+      return p.lat && p.lng && !(p.lat === 0 && p.lng === 0);
+    });
+
+    var map = L.map(el).setView([lat, lng], zoom);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    pins.forEach(function(pin) {
+      L.marker([pin.lat, pin.lng])
+        .addTo(map)
+        .bindPopup('<a href="/listing/' + pin.slug + '/">' + pin.name + '</a>');
+    });
+
+    if (pins.length > 1) {
+      var group = L.featureGroup(pins.map(function(p) { return L.marker([p.lat, p.lng]); }));
+      map.fitBounds(group.getBounds().pad(0.1));
+    }
+  }
+
+  document.addEventListener('astro:page-load', initCityMap);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCityMap);
+  } else {
+    initCityMap();
+  }
+</script>

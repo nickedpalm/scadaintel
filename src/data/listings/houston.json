@@ -1,0 +1,157 @@
+[
+  {
+    "slug": "colexas-digital-houston",
+    "name": "Colexas Digital",
+    "city": "Houston",
+    "state": "TX",
+    "address": "",
+    "lat": 29.7589382,
+    "lng": -95.3676974,
+    "phone": "",
+    "website": "https://colexas.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0.0,
+    "review_count": 0,
+    "description": "Develops, deploys, and maintains SCADA systems for process industries, ensuring remote control, alarms, and operational performance.",
+    "certifications": [],
+    "services": [
+      "SCADA development",
+      "SCADA deployment",
+      "SCADA maintenance"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:57:14",
+    "sentiment": null
+  },
+  {
+    "slug": "integrity-control-services-houston",
+    "name": "Integrity Control Services",
+    "city": "Houston",
+    "state": "TX",
+    "address": "",
+    "lat": 29.7604,
+    "lng": -95.3698,
+    "phone": "1776683480",
+    "website": "https://ics-tx.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0.0,
+    "review_count": 0,
+    "description": "Provides expert SCADA programming and integration services to enhance automation, reliability, and system control for industrial applications.",
+    "certifications": [],
+    "services": [
+      "SCADA programming",
+      "SCADA integration",
+      "Custom automation"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:57:14",
+    "sentiment": {
+      "label": "positive",
+      "score": 0.95,
+      "keywords": [
+        "professional",
+        "responsive",
+        "knowledgeable",
+        "dependable",
+        "service-driven",
+        "innovative"
+      ],
+      "highlights": [
+        {
+          "text": "ICS is very responsive, professional and always cheerful. Knowledge on the scope of work is top notch.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "The word integrity in their name truly describes the way they do business",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Innovative, dependable, service-driven, punctual, polite, and provide cutting edge technology",
+          "sentiment": "positive"
+        },
+        {
+          "text": "They are willing and dedicated to go the extra mile to supply exactly what the end user desires",
+          "sentiment": "positive"
+        }
+      ],
+      "summary": "Integrity Control Services receives consistently excellent feedback from long-term customers highlighting exceptional professionalism, responsiveness, expertise, and unwavering commitment to service excellence."
+    }
+  },
+  {
+    "slug": "plc-construction-houston",
+    "name": "PLC Construction",
+    "city": "Houston",
+    "state": "TX",
+    "address": "",
+    "lat": 29.7604,
+    "lng": -95.3698,
+    "phone": "",
+    "website": "https://www.plcconstruction.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0.0,
+    "review_count": 0,
+    "description": "Specializes in migrating and optimizing SCADA systems, reverse engineering setups, and designing new architectures with projects in South Texas, West Texas, and Permian Basin.",
+    "certifications": [],
+    "services": [
+      "SCADA migration",
+      "SCADA optimization",
+      "PLC SCADA systems"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:57:14",
+    "sentiment": null
+  },
+  {
+    "slug": "trac-n-trol-inc-houston",
+    "name": "TraC-n-trol, Inc.",
+    "city": "Houston",
+    "state": "TX",
+    "address": "",
+    "lat": 29.7604,
+    "lng": -95.3698,
+    "phone": "2545352419",
+    "website": "https://www.tracntrol.com",
+    "email": "18d2f96d279149989b95faf0a4b41882@sentry-next.wixpress.com",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0.0,
+    "review_count": 0,
+    "description": "Designs, integrates, and supports SCADA systems for municipal water and wastewater utilities across Texas using non-proprietary components.",
+    "certifications": [],
+    "services": [
+      "Water & wastewater SCADA",
+      "SCADA design",
+      "SCADA integration",
+      "SCADA support"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:57:14",
+    "sentiment": null
+  }
+]

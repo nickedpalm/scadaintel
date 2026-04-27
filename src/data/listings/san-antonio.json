@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "nfm-consulting-san-antonio",
+    "name": "NFM Consulting",
+    "city": "San Antonio",
+    "state": "TX",
+    "address": "",
+    "lat": 29.4241,
+    "lng": -98.4936,
+    "phone": "(210) 405-4248",
+    "website": "https://nfmconsulting.com",
+    "email": "info@nfmconsulting.com",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0.0,
+    "review_count": 0,
+    "description": "Texas-based managed SCADA services provider specializing in Ignition and Geo SCADA Expert for utilities, oil & gas, data centers, and water operators with 24/7 monitoring, historian optimization, and ERCOT telemetry support.",
+    "certifications": [],
+    "services": [
+      "Ignition managed services",
+      "Geo SCADA Expert support",
+      "24/7 monitoring",
+      "ERCOT compliance"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:57:14",
+    "sentiment": null
+  }
+]

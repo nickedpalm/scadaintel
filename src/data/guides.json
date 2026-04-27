@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "ics-security-assessment-checklist",
+    "title": "ICS Security Assessment Checklist",
+    "subtitle": "Protect Your SCADA Systems from Industrial Cyber Attacks",
+    "description": "Systematic assessment framework for plant engineers securing industrial control systems. Identify SCADA vulnerabilities, prevent unauthorized access, and implement GICSP-aligned controls before attackers exploit critical infrastructure gaps.",
+    "bullets": [
+      "Audit 15+ critical SCADA security configuration areas",
+      "Ensure compliance with GICSP and IEC 62443",
+      "Identify vulnerabilities before regulatory audits detect them",
+      "Prioritize fixes without disrupting plant operations"
+    ],
+    "pdfUrl": "/guides/pdf/ics-security-assessment-checklist.pdf",
+    "category": "How-To"
+  },
+  {
+    "slug": "scada-consultant-rate-guide-2026",
+    "title": "SCADA Consultant Rate Guide 2026",
+    "subtitle": "Benchmark SCADA consultant rates by credential and region",
+    "description": "Compare current market rates for GICSP-certified SCADA consultants across geographies and credential levels. Build accurate budgets for plant security upgrades, automation projects, and compliance work with real 2026 data.",
+    "bullets": [
+      "GICSP consultant hourly rates: $150\u2013$350 nationally",
+      "Regional pricing breakdown across 50 U.S. states",
+      "Certified vs. uncertified rate premium analysis",
+      "Project-based pricing for ICS audits and upgrades"
+    ],
+    "pdfUrl": "/guides/pdf/scada-consultant-rate-guide-2026.pdf",
+    "category": "Pricing"
+  },
+  {
+    "slug": "scada-consultant-vetting-guide",
+    "title": "SCADA Consultant Vetting Guide",
+    "subtitle": "Find GICSP-certified SCADA consultants matched to your critical infrastructure",
+    "description": "Critical infrastructure demands qualified SCADA partners. This guide reveals how utilities and plant engineers evaluate consultants on credentials, specialized experience, and compliance expertise\u2014helping you avoid costly mistakes and ensure grid security.",
+    "bullets": [
+      "Identify GICSP certification and grid-interconnection specialization requirements",
+      "Screen for minimum 7+ years managing critical SCADA systems",
+      "Evaluate NERC standards expertise and security assessment capabilities",
+      "Match consultant background to utility or generation plant needs"
+    ],
+    "pdfUrl": "/guides/pdf/scada-consultant-vetting-guide.pdf",
+    "category": "Vetting"
+  }
+]

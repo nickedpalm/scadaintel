@@ -1,0 +1,50 @@
+[
+  {
+    "question": "How much does a SCADA consultant cost?",
+    "answer": "Independent SCADA consultants typically bill $150\u2013$300/hour depending on specialization and region. Project-based engagements for a mid-size utility upgrade commonly run $50,000\u2013$250,000. Firms with OT cybersecurity or specific vendor certifications (Ignition, Wonderware, OSIsoft PI) command the higher end. Fixed-price bids reduce budget risk but often carry contingency markups of 15\u201325%."
+  },
+  {
+    "question": "What is a typical SCADA consulting project timeline?",
+    "answer": "A full system assessment and design phase usually takes 4\u201312 weeks. Implementation of a greenfield or major migration project runs 6\u201318 months depending on site count and I/O count. Vendors who promise faster timelines without a detailed existing-system audit are a yellow flag\u2014undocumented legacy code routinely doubles scope."
+  },
+  {
+    "question": "Do SCADA consultants charge for the initial assessment?",
+    "answer": "Many firms offer a free or low-cost scoping call, but a formal site assessment with findings report typically costs $5,000\u2013$20,000. Paid assessments usually produce a gap analysis, risk register, and rough order-of-magnitude estimate you can use to get competitive bids. Waiving assessment fees often means the cost is baked into the subsequent contract."
+  },
+  {
+    "question": "What certifications should a SCADA consultant have?",
+    "answer": "Look for ISA Certified Automation Professional (CAP), ISA/IEC 62443 Cybersecurity certificates (CSSP or CSSA), and vendor-specific credentials from the platform in use (e.g., Inductive Automation Integrator certification for Ignition). NERC CIP familiarity is essential for bulk electric system work. No single credential covers all verticals, so match certs to your specific compliance obligations."
+  },
+  {
+    "question": "How do I verify a SCADA integrator's experience with my industry?",
+    "answer": "Ask for three references from comparable facilities\u2014same process type, similar I/O count, same regulatory environment. Request sample deliverables such as functional design specs or FAT test plans with client names redacted. Integration firms on Inductive Automation's or Aveva's official partner lists have passed vendor vetting, which is a useful baseline but not a substitute for reference checks."
+  },
+  {
+    "question": "What's the difference between a SCADA consultant and a systems integrator?",
+    "answer": "Consultants typically provide vendor-neutral advisory work: assessments, specs, project management, and validation. Integrators build and commission the system, often with preferred vendor relationships that can bias recommendations. The same firm sometimes does both, which creates a conflict of interest during design. For large projects, separating the advisory and build roles reduces that risk."
+  },
+  {
+    "question": "What should be included in a SCADA consulting statement of work?",
+    "answer": "A solid SOW specifies deliverables (design documents, FAT/SAT procedures, as-built drawings), acceptance criteria, change-order terms, IP ownership of custom code, and handoff training. Vague SOWs with 'time and materials to completion' language expose you to cost overruns. Insist on milestone-based payment tied to specific, reviewable deliverables."
+  },
+  {
+    "question": "How do SCADA consultants handle cybersecurity and IEC 62443 compliance?",
+    "answer": "Consultants aligned with IEC 62443 will perform a zone-and-conduit segmentation analysis, produce a risk assessment, and specify security levels for each zone. Compliance work is iterative\u2014expect a gap assessment first, then a remediation plan, then validation testing. Firms that jump straight to selling a firewall appliance without a structured assessment are skipping necessary groundwork."
+  },
+  {
+    "question": "Can a SCADA consultant work remotely, or do they need to be on-site?",
+    "answer": "Design, specification, and project management phases can largely be done remotely. Hardware commissioning, loop checks, and operator training almost always require on-site presence. Remote-capable consultants reduce travel costs but need secure remote access to your OT network, which itself requires planning and approval under most security policies."
+  },
+  {
+    "question": "What red flags should I watch for when hiring a SCADA consultant?",
+    "answer": "Be cautious of consultants who lead with a preferred vendor before completing an assessment, can't name the specific engineers who will do the work, lack documented change-order procedures, or have no experience with your regulatory framework (NERC CIP, AWIA, CFATS). Also watch for proposals that omit cybersecurity hardening\u2014it's rarely optional in modern utility environments."
+  },
+  {
+    "question": "How do I manage a SCADA upgrade without taking the plant offline?",
+    "answer": "The standard approach is parallel operation: run the new system alongside the legacy system with read-only monitoring before cutting over control. Phased I/O migration by subsystem reduces risk versus a full cutover. Consultants should provide a detailed cutover plan with rollback procedures, and operators should be trained on the new HMI before live switchover."
+  },
+  {
+    "question": "Who owns the SCADA code and configuration after a consulting engagement?",
+    "answer": "Ownership depends entirely on the contract. Many integrators retain IP rights to custom libraries and charge for source code escrow or full buyout. Insist on source code delivery, documentation of all custom scripts, and a license or assignment clause in the SOW. Without it, you may be locked into that vendor for future modifications."
+  }
+]

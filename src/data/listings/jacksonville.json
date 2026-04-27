@@ -1,0 +1,96 @@
+[
+  {
+    "slug": "lashley-cohen-and-associates-jacksonville",
+    "name": "Lashley, Cohen and Associates",
+    "city": "Jacksonville",
+    "state": "FL",
+    "address": "",
+    "lat": 30.3322,
+    "lng": -81.6557,
+    "phone": "1773257464",
+    "website": "https://lashleycohen.com",
+    "email": "websales@lashleycohen.com",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Southeastern US industrial automation firm with over 35 years of experience in controls integration, ISO-9001 certified, Rockwell Systems Bronze Partner, serving manufacturing, water/wastewater, food and beverage, chemicals, metals, and building materials.",
+    "certifications": [],
+    "services": [
+      "SCADA integration",
+      "HMI",
+      "PLC integration",
+      "controls engineering"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:57:21",
+    "sentiment": {
+      "label": "positive",
+      "score": 0.96,
+      "keywords": [
+        "professional",
+        "knowledgeable",
+        "reliable",
+        "efficient",
+        "expertise",
+        "quick"
+      ],
+      "highlights": [
+        {
+          "text": "knowing help is only a phone call away is a great peace of mind",
+          "sentiment": "positive"
+        },
+        {
+          "text": "extremely pleased with the services I have received",
+          "sentiment": "positive"
+        },
+        {
+          "text": "top notch professionals",
+          "sentiment": "positive"
+        },
+        {
+          "text": "They always deliver what they promise",
+          "sentiment": "positive"
+        }
+      ],
+      "summary": "Lashley, Cohen & Associates has an exceptional reputation built on professional expertise, reliability, and long-term customer satisfaction across multiple industries."
+    }
+  },
+  {
+    "slug": "southern-flow-jacksonville",
+    "name": "Southern Flow",
+    "city": "Jacksonville",
+    "state": "FL",
+    "address": "10330 Chedoak Ct, Jacksonville, FL 32218",
+    "lat": 30.3322,
+    "lng": -81.6557,
+    "phone": "",
+    "website": "https://southernflowinc.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Multi-disciplined control systems and SCADA integrator serving the Southeast and Eastern Seaboard for over 30 years, providing custom SCADA systems with HMI programming and graphic generation.",
+    "certifications": [],
+    "services": [
+      "SCADA integration",
+      "HMI programming",
+      "control systems design",
+      "plant monitoring"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:57:21",
+    "sentiment": null
+  }
+]

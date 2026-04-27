@@ -1,0 +1,187 @@
+[
+  {
+    "slug": "icad-automation-los-angeles",
+    "name": "ICAD Automation",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "Not specified in search results",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "phone": "1765847067",
+    "website": "https://icadautomation.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Manufacturing SCADA specialist with 20+ years of experience designing and implementing manufacturing SCADA in facilities",
+    "certifications": [],
+    "services": [
+      "manufacturing SCADA design",
+      "manufacturing SCADA implementation"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:56:54",
+    "sentiment": null
+  },
+  {
+    "slug": "plcs-plus-international-los-angeles",
+    "name": "PLC's Plus International",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "Not specified in search results",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "phone": "1661322447",
+    "website": "https://bkppi.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "PLCs, HMI and SCADA programming company serving California-based businesses regardless of project size",
+    "certifications": [],
+    "services": [
+      "PLC programming",
+      "HMI programming",
+      "SCADA programming"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:56:54",
+    "sentiment": {
+      "label": "positive",
+      "score": 0.98,
+      "keywords": [
+        "knowledgeable",
+        "fast and efficient",
+        "on-time, on-budget",
+        "trusted partner",
+        "exemplary service",
+        "strong relationships"
+      ],
+      "highlights": [
+        {
+          "text": "Delivered on time and on budget. We're very happy to have PLCs Plus as our partner.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Fast, efficient, and provided exceptional service. I would definitely work with them again.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "After eight years of partnership, I can attest to the level of service quality they offered.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "The only Contractor Manager that really delivered for me and built a strong client relationship.",
+          "sentiment": "positive"
+        }
+      ],
+      "summary": "PLCs Plus International has an exceptional reputation with consistently positive testimonials across multiple industries, praised for technical expertise, reliability, client relationships, and delivering projects on schedule and budget."
+    }
+  },
+  {
+    "slug": "scada-integrations-los-angeles",
+    "name": "SCADA Integrations",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "Not specified in search results",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "phone": "2545352419",
+    "website": "https://www.scadaintegrations.com",
+    "email": "2062d0a4929b45348643784b5cb39c36@sentry.wixpress.com",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Full-service firm delivering complete SCADA solutions including system design, implementation, ethernet radio assessments, radio system design, PLC panel construction and maintenance",
+    "certifications": [],
+    "services": [
+      "SCADA system design",
+      "SCADA implementation",
+      "ethernet radio assessments",
+      "radio system design",
+      "PLC panel construction",
+      "maintenance"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:56:54",
+    "sentiment": null
+  },
+  {
+    "slug": "trimark-los-angeles",
+    "name": "Trimark",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "Not specified in search results",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "phone": "2604041915",
+    "website": "https://trimarkassoc.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "SCADA planning and control systems consulting firm providing expert guidance to improve project reliability and performance",
+    "certifications": [],
+    "services": [
+      "SCADA planning",
+      "control systems consulting"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:56:54",
+    "sentiment": {
+      "label": "positive",
+      "score": 0.98,
+      "keywords": [
+        "professional",
+        "customer-focused",
+        "mission-driven",
+        "reliable",
+        "solutions-oriented",
+        "innovative"
+      ],
+      "highlights": [
+        {
+          "text": "That's key to making renewable energy stable, reliable, and viable \u2013 which is how we'll save the world.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "My role is to help customers gain peace of mind and operate confidently in accomplishing their mission.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Our control solution allows PV and BESS resources to safely connect to the grid, protect their expensive equipment",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Answers most user's questions right on the spot.",
+          "sentiment": "positive"
+        }
+      ],
+      "summary": "Trimark is portrayed as a mission-driven, solutions-focused company where employees are deeply committed to customer success and enabling reliable renewable energy infrastructure."
+    }
+  }
+]

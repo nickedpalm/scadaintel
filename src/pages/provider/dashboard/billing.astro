@@ -1,0 +1,145 @@
+---
+import DashboardLayout from '~/layouts/DashboardLayout.astro';
+import config from '~/config';
+
+const featuredMo = config.pricing?.featuredMonthlyUsd ?? 49;
+const cityProMo = config.pricing?.cityProMonthlyUsd ?? 149;
+---
+<DashboardLayout title={`Billing — ${config.brandName}`} activePage="billing">
+
+  <div class="dash-topbar">
+    <div>
+      <h1>Billing & Plan</h1>
+      <div class="dash-topbar-sub">Manage your subscription and payment method.</div>
+    </div>
+  </div>
+
+  <!-- Plan comparison -->
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:28px">
+    <!-- Free plan -->
+    <div class="dash-card">
+      <div class="dash-card-body" style="padding:24px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+          <h3 style="font-size:18px;font-weight:700">Free</h3>
+          <span style="background:#ecfdf5;color:#059669;font-size:11px;font-weight:700;padding:4px 10px;border-radius:6px">Current Plan</span>
+        </div>
+        <div style="font-size:32px;font-weight:800;margin-bottom:20px">$0<span style="font-size:15px;font-weight:500;color:#6b7280">/mo</span></div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#4b5563">
+          <div>&#x2705; Basic listing profile</div>
+          <div>&#x2705; Quote request inbox</div>
+          <div>&#x2705; Photo uploads (8 max)</div>
+          <div>&#x2705; Business info editing</div>
+          <div style="color:#d1d5db">&#x274c; Sponsored placement</div>
+          <div style="color:#d1d5db">&#x274c; Priority in search results</div>
+          <div style="color:#d1d5db">&#x274c; Monthly performance report</div>
+          <div style="color:#d1d5db">&#x274c; Verified badge highlight</div>
+        </div>
+        <button class="dash-btn dash-btn-outline" style="width:100%;justify-content:center;margin-top:20px;opacity:0.5;cursor:default" disabled>Current Plan</button>
+      </div>
+    </div>
+
+    <!-- Sponsored plan -->
+    <div class="dash-card" style="border-color:#f59e0b;border-width:2px;position:relative;overflow:visible">
+      <div style="position:absolute;top:-12px;right:16px;background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:6px">&#x2b50; Popular</div>
+      <div class="dash-card-body" style="padding:24px">
+        <div style="margin-bottom:16px">
+          <h3 style="font-size:18px;font-weight:700">Sponsored</h3>
+          <p style="font-size:12px;color:#d97706;font-weight:600;margin-top:4px">Limited spots per city</p>
+        </div>
+        <div style="font-size:32px;font-weight:800;margin-bottom:20px">${featuredMo}<span style="font-size:15px;font-weight:500;color:#6b7280">/mo</span></div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#4b5563">
+          <div>&#x2705; Everything in Free</div>
+          <div>&#x2705; <strong>Pinned to #1 in your city</strong></div>
+          <div>&#x2705; <strong>Sponsored badge on listing</strong></div>
+          <div>&#x2705; Priority quote requests</div>
+          <div>&#x2705; Monthly PDF performance report</div>
+          <div>&#x2705; Verified badge highlight</div>
+          <div>&#x2705; Direct email notifications</div>
+          <div>&#x2705; Priority support</div>
+        </div>
+        <a id="upgrade-sponsored" href={config.stripeSponsoredLink} target="_blank" rel="noopener" class="dash-btn dash-btn-upgrade" style="width:100%;justify-content:center;margin-top:20px;font-size:14px;padding:12px;text-decoration:none">Upgrade to Sponsored</a>
+      </div>
+    </div>
+
+    <!-- City Pro plan -->
+    <div class="dash-card" style="border-color:#059669;border-width:2px;position:relative;overflow:visible">
+      <div style="position:absolute;top:-12px;right:16px;background:linear-gradient(135deg,#10b981,#059669);color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:6px">&#x1f451; Best Value</div>
+      <div class="dash-card-body" style="padding:24px">
+        <div style="margin-bottom:16px">
+          <h3 style="font-size:18px;font-weight:700">City Pro</h3>
+          <p style="font-size:12px;color:#059669;font-weight:600;margin-top:4px">One provider per city</p>
+        </div>
+        <div style="font-size:32px;font-weight:800;margin-bottom:20px">${cityProMo}<span style="font-size:15px;font-weight:500;color:#6b7280">/mo</span></div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#4b5563">
+          <div>&#x2705; Everything in Sponsored</div>
+          <div>&#x2705; <strong>Named in &ldquo;Best in [City]&rdquo; guide</strong></div>
+          <div>&#x2705; <strong>Dofollow backlink to your site</strong></div>
+          <div>&#x2705; Sponsor slot in {config.buyerPersona} newsletter</div>
+          <div>&#x2705; Priority onboarding &amp; support</div>
+          <div>&#x2705; Quarterly performance review call</div>
+        </div>
+        <a id="upgrade-citypro" href={config.stripeCityProLink} target="_blank" rel="noopener" class="dash-btn dash-btn-upgrade" style="width:100%;justify-content:center;margin-top:20px;font-size:14px;padding:12px;text-decoration:none;background:linear-gradient(135deg,#10b981,#059669)">Upgrade to City Pro</a>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-size:11px;color:#9ca3af;text-align:center;margin-bottom:28px">No contracts &middot; Cancel anytime &middot; Billed monthly</p>
+
+  <!-- ROI Calculator -->
+  <div class="dash-card" style="margin-bottom:28px">
+    <div class="dash-card-header"><h2>Is it worth it?</h2></div>
+    <div class="dash-card-body">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;text-align:center">
+        <div>
+          <div style="font-size:13px;color:#6b7280;margin-bottom:4px">Average booking</div>
+          <div style="font-size:24px;font-weight:800">$800-$1,500</div>
+        </div>
+        <div>
+          <div style="font-size:13px;color:#6b7280;margin-bottom:4px">Quote increase with Sponsored</div>
+          <div style="font-size:24px;font-weight:800;color:#059669">3-5x</div>
+        </div>
+        <div>
+          <div style="font-size:13px;color:#6b7280;margin-bottom:4px">Payoff</div>
+          <div style="font-size:24px;font-weight:800;color:#2563eb">1 booking</div>
+        </div>
+      </div>
+      <div style="background:#eff6ff;border-radius:10px;padding:16px;margin-top:20px;text-align:center">
+        <p style="font-size:14px;color:#1e40af;font-weight:600">One booked engagement pays for months of Sponsored.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Payment & billing history -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+    <div class="dash-card">
+      <div class="dash-card-header"><h2>Payment Method</h2></div>
+      <div class="dash-card-body" style="text-align:center;padding:32px;color:#9ca3af">
+        <div style="font-size:36px;margin-bottom:8px">&#x1f4b3;</div>
+        <p style="font-size:14px">No payment method on file</p>
+        <p style="font-size:12px;margin-top:4px">Add a payment method when you upgrade.</p>
+      </div>
+    </div>
+    <div class="dash-card">
+      <div class="dash-card-header"><h2>Billing History</h2></div>
+      <div class="dash-card-body" style="text-align:center;padding:32px;color:#9ca3af">
+        <div style="font-size:36px;margin-bottom:8px">&#x1f4c4;</div>
+        <p style="font-size:14px">No billing history</p>
+        <p style="font-size:12px;margin-top:4px">Invoices will appear here after your first payment.</p>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline>
+    window.addEventListener('dash-ready', function() {
+      var slug = window.dashState.currentSlug;
+      if (!slug) return;
+      ['upgrade-sponsored', 'upgrade-citypro'].forEach(function(id) {
+        var link = document.getElementById(id);
+        if (link && link.href) {
+          link.href = link.href.split('?')[0] + '?client_reference_id=' + encodeURIComponent(slug);
+        }
+      });
+    });
+  </script>
+
+</DashboardLayout>

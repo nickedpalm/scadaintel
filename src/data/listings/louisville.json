@@ -1,0 +1,33 @@
+[
+  {
+    "slug": "southern-integrated-solutions-consulting-louisville",
+    "name": "Southern Integrated Solutions & Consulting",
+    "city": "Louisville",
+    "state": "KY",
+    "address": "",
+    "lat": 38.2527,
+    "lng": -85.7585,
+    "phone": "1181975010",
+    "website": "https://www.southernisc.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "End-to-end provider for instrumentation, electrical, automation, and SCADA solutions for energy, utilities, manufacturing, ports, and infrastructure industries.",
+    "certifications": [],
+    "services": [
+      "SCADA solutions",
+      "system integration",
+      "automation"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 16:00:19",
+    "sentiment": null
+  }
+]

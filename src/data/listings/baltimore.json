@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "digitalogic-baltimore",
+    "name": "DigitaLogic",
+    "city": "Baltimore",
+    "state": "MD",
+    "address": "25 North Caroline Street, Baltimore, MD 21231",
+    "lat": 39.2904,
+    "lng": -76.6122,
+    "phone": "410-662-9500",
+    "website": "https://digitalogic.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Small business providing guidance, support, and delivery of systems for automation, telecommunications, SCADA, and system integration of legacy and new systems.",
+    "certifications": [],
+    "services": [
+      "SCADA systems",
+      "automation",
+      "telecommunications",
+      "system integration"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:58:45",
+    "sentiment": null
+  },
+  {
+    "slug": "mckim-creed-baltimore",
+    "name": "McKim & Creed",
+    "city": "Baltimore",
+    "state": "MD",
+    "address": "",
+    "lat": 39.2904,
+    "lng": -76.6122,
+    "phone": "1777219824",
+    "website": "https://www.mckimcreed.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Provides I&C and SCADA services including planning, design, programming, updating, repairing, and implementing in-plant and system-wide systems for utility providers.",
+    "certifications": [],
+    "services": [
+      "instrumentation & controls",
+      "SCADA design",
+      "system integration",
+      "programming"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:58:45",
+    "sentiment": null
+  },
+  {
+    "slug": "rkk-baltimore",
+    "name": "RK&K",
+    "city": "Baltimore",
+    "state": "MD",
+    "address": "",
+    "lat": 39.2904,
+    "lng": -76.6122,
+    "phone": "3241520488",
+    "website": "https://www.rkk.com",
+    "email": "communications@rkk.com",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Integrates advanced instrumentation and control (I&C) systems, delivering reliable automation and monitoring solutions tailored to operational needs.",
+    "certifications": [],
+    "services": [
+      "electrical",
+      "instrumentation & controls",
+      "SCADA"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:58:45",
+    "sentiment": {
+      "label": "positive",
+      "score": 0.93,
+      "keywords": [
+        "collaborative",
+        "family culture",
+        "supportive",
+        "valued",
+        "growth",
+        "innovative"
+      ],
+      "highlights": [
+        {
+          "text": "RK&K is more than just an engineering firm, it's a family where everyone cares about each other.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "I choose to work for RK&K because it is clear that employees are valued and engaged.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "My coworkers often feel more like friends, and every day is different than the last.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "A supportive and collaborative environment that makes me feel appreciated while pushing me to improve.",
+          "sentiment": "positive"
+        }
+      ],
+      "summary": "RK&K has exceptionally strong employee sentiment, with reviews consistently praising collaborative culture, family-like relationships, professional growth opportunities, and genuine appreciation for employees at all levels."
+    }
+  }
+]

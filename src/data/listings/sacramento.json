@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "telstar-sacramento",
+    "name": "Telstar",
+    "city": "Sacramento",
+    "state": "CA",
+    "address": "Not fully specified in search results",
+    "lat": 38.5816,
+    "lng": -121.4944,
+    "phone": "(925) 671-2888",
+    "website": "https://telstarinc.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "SCADA system and automation contractors providing efficient, cost-effective solutions for projects of any size throughout California with offices in Sacramento, Hanford, and Stockton/Modesto",
+    "certifications": [],
+    "services": [
+      "SCADA systems",
+      "automation projects",
+      "system installation"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:56:54",
+    "sentiment": null
+  },
+  {
+    "slug": "tesco-controls-inc-sacramento",
+    "name": "Tesco Controls, Inc.",
+    "city": "Sacramento",
+    "state": "CA",
+    "address": "8440 Florin Road, Sacramento, CA 95828",
+    "lat": 38.5816,
+    "lng": -121.4944,
+    "phone": "(916) 395-8800",
+    "website": "https://tescocontrols.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Advanced Certified SCADA integrator",
+    "certifications": [],
+    "services": [
+      "SCADA integration"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:56:54",
+    "sentiment": null
+  }
+]

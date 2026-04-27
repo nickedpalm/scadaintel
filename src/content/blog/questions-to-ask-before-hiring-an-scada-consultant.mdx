@@ -1,0 +1,116 @@
+---
+title: "15 Questions to Ask Before Hiring an SCADA Consultant"
+description: "Hiring the wrong SCADA consultant cost one plant more than the contract. These 15 questions separate real OT practitioners from resume-padders."
+pubDate: 2026-04-26
+author: "Nick Palmer"
+tags: ["SCADA consultant", "hiring", "checklist"]
+hub: "The Complete Guide to SCADA Consultants"
+---
+
+We hired the wrong SCADA consultant once. He talked a good game in the interview — dropped all the right acronyms, had a LinkedIn full of "ICS project" entries — but two months into our water treatment system modernization, we realized he'd been configuring HMIs the same way he had in 2011, with zero consideration for network segmentation or modern OT security standards. The remediation cost more than his contract.
+
+That experience sent me down a rabbit hole. I talked to plant engineers, utility operators, and a few consultants willing to be honest about what separates the real practitioners from the resume-padders. What I found: most people ask the wrong questions, or don't ask enough.
+
+> **The Short Version:** A strong SCADA consultant can articulate system architecture (RTUs, PLCs, HMIs, comms infrastructure), demonstrate hands-on PLC-SCADA integration experience, and speak fluently about OT cybersecurity frameworks like ISA/IEC 62443 and NERC CIP. If they fumble on any of those three, keep looking.
+
+**Key Takeaways:**
+- SCADA work spans five distinct system levels — a consultant weak on any of them is a liability
+- PLC-SCADA integration is where most projects get into trouble; probe it hard
+- Cybersecurity credentials (GICSP, CAP) are table stakes for anything touching critical infrastructure
+- Vague answers about "experience" are a red flag; push for specific project names and outcomes
+
+---
+
+This list maps to real hiring criteria used by plant engineers and utility operators. It's not an exhaustive technical exam — it's a structured filter to separate consultants who've *done the work* from those who've *described the work* on paper.
+
+Before the full list, one framing note: these questions aren't gotchas. They're designed to give a strong consultant room to show depth. A great candidate will relish questions 4, 7, and 11. A weak one will hedge on all three.
+
+---
+
+## The 15 Questions
+
+**1. "Walk me through the five core components of a SCADA system."**
+
+This is the baseline. A competent consultant should immediately cite RTUs, PLCs, HMIs, communication infrastructure, and the supervisory server layer without hesitation. If they stall or conflate components, they're not operating at the level your project needs.
+
+**2. "How do you differentiate SCADA from a standalone PLC system?"**
+
+SCADA handles supervisory data acquisition at scale; PLCs handle direct device control. They interact in real-time, but they're not interchangeable. A consultant who blurs this distinction will make architectural decisions that create problems downstream.
+
+**3. "Describe a PLC-SCADA communication setup you've personally configured."**
+
+This is where theory meets execution. PLCs function as Smart RTUs — they translate field device signals into data the SCADA server can process. Ask them to be specific: what PLC platform, what protocol (Modbus, DNP3, Profibus), what challenges came up.
+
+> **Pro Tip:** If they can name the exact protocol and describe a troubleshooting scenario, that's signal. If they speak only in generalities, that's noise.
+
+**4. "What SCADA system levels have you worked with, and at what depth?"**
+
+There are four distinct operational levels: field instruments/sensors, RTU/PLC layer, control station layer, and communication links. A senior consultant should have hands-on experience across all four. A specialist might go deep on one or two — which is fine, as long as it matches your project scope.
+
+**5. "Which SCADA software platforms have you deployed, and in what industries?"**
+
+CIMPLICITY, iFIX, Ignition, WinCC — these aren't interchangeable. Each has a different architecture, licensing model, and learning curve. Someone who's only touched one platform in one sector may struggle when your environment calls for something different.
+
+**6. "How do you approach HMI design for operator usability?"**
+
+A good HMI isn't just functional — it prevents errors under stress. Ask what design standards they follow (ISA-101 is the benchmark), how they handle alarm rationalization, and whether they've ever redesigned an HMI after an incident review. Operators' lives can depend on this.
+
+**7. "Describe your approach to network segmentation in an OT environment."**
+
+This is the security litmus test. The right answer involves purdue model segmentation, DMZ architecture between IT and OT networks, and explicit policies around remote access. Any consultant who doesn't bring up the Purdue model or IEC 62443 unprompted is missing a major piece.
+
+> **Reality Check:** A lot of SCADA consultants are excellent control systems engineers with minimal OT security training. In 2025, that's not good enough for any system touching critical infrastructure.
+
+**8. "What cybersecurity certifications or frameworks are you familiar with?"**
+
+GICSP (Global Industrial Cyber Security Professional) and CAP (Certified Automation Professional) are the credentialing benchmarks. ISA/IEC 62443 and NERC CIP are the compliance frameworks for critical infrastructure. If they hold none of these and haven't studied any of the frameworks, that's a gap you'll pay for later.
+
+**9. "Have you worked on a NERC CIP compliance project? What was your role?"**
+
+For utilities operating bulk electric systems, NERC CIP compliance isn't optional — it's federal. A consultant who's been through a compliance audit knows what documentation looks like, what auditors look for, and where teams usually fail. That experience is worth real money.
+
+**10. "How do you handle alarm management and what constitutes a well-rationalized alarm system?"**
+
+Alarm floods kill operators' ability to respond in emergencies. EEMUA 191 is the industry standard for alarm system design — a good consultant should know it cold. Ask what their highest-alarm-density project looked like and how they brought it under control.
+
+| Skill Area | Junior Consultant | Mid-Level | Senior |
+|---|---|---|---|
+| SCADA component knowledge | Basic definitions | Hands-on configuration | Full system architecture |
+| PLC-SCADA integration | Conceptual | Configured 1-2 platforms | Multi-platform, multi-protocol |
+| OT Cybersecurity | Minimal | IEC 62443 awareness | NERC CIP / GICSP certified |
+| HMI Design | Template-based | ISA-101 familiar | Incident-informed redesigns |
+| Project delivery | Supervised | Independent | Led teams, managed scope |
+
+**11. "Walk me through a SCADA modernization project that went sideways. What happened and what did you do?"**
+
+Nobody tells you this: the consultants worth hiring have a war story they'll actually tell you. Projects go sideways — the question is whether your candidate learned from it, owns their role in it, and made different decisions afterward. Evasiveness here is a red flag.
+
+**12. "How do you document system architecture and hand off to in-house teams?"**
+
+Deliverables should include architecture diagrams, I/O lists, network topology maps, and annotated configuration files. If their documentation standard is "whatever the client asks for," that's not a standard — that's a liability transfer.
+
+**13. "Describe your experience with historian systems and data trending."**
+
+Real/historical trending and report generation are core SCADA features. Historians like OSIsoft PI or Wonderware InSQL are standard in industrial environments. A consultant who's never managed historian configuration has a significant blind spot for operational analytics.
+
+**14. "How do you approach vulnerability assessments for legacy SCADA systems?"**
+
+Most industrial environments have equipment running Windows XP or older, with no patching cadence and default credentials still in place. A good consultant has a methodology for legacy risk — not just a checklist, but a prioritization framework tied to operational impact.
+
+> **Pro Tip:** Ask them specifically what they'd do if they found a critical CVE in a system that can't be taken offline. Their answer reveals whether they understand operational constraints or treat OT like IT.
+
+**15. "What does success look like at the end of this engagement, from your perspective?"**
+
+This is the character question. Strong consultants define success in terms of your operational outcomes — uptime, compliance posture, operator capability, reduced incident exposure. Weak consultants define it in terms of deliverables submitted and invoices cleared.
+
+---
+
+## Practical Bottom Line
+
+Run every candidate through at least questions 1, 3, 7, 11, and 15. Those five cover technical foundation, hands-on integration, security posture, self-awareness, and client orientation. If someone clears all five well, dig deeper on the domain-specific questions matching your project scope.
+
+For a modernization project in energy or water, questions 8 and 9 are non-negotiable. For a greenfield manufacturing deployment, questions 5 and 13 matter most.
+
+The difference between a good SCADA engagement and a remediation nightmare usually comes down to one hiring conversation. Make it count.
+
+For a broader orientation before you start interviewing, read [The Complete Guide to SCADA Consultants](/blog/complete-guide-SCADA-consultants/) — it covers project types, typical engagement structures, and how to scope a statement of work before you bring anyone in.

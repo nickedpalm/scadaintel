@@ -1,0 +1,64 @@
+---
+import type { SchemaField } from '~/config';
+
+interface Props {
+  schema: SchemaField[];
+  values: Record<string, unknown>;
+}
+
+const { schema, values } = Astro.props;
+
+const inlineFields = schema.filter(
+  (f) => f.display === 'badge' || f.display === 'pill_list'
+);
+---
+
+{inlineFields.length > 0 && (
+  <div class="schema-badges flex flex-wrap gap-1.5 mt-2">
+    {inlineFields.map((field) => {
+      const raw = values[field.key];
+      if (raw == null || raw === false || (Array.isArray(raw) && raw.length === 0)) {
+        return null;
+      }
+
+      if (field.display === 'badge' && field.type === 'boolean' && raw === true) {
+        return (
+          <span
+            class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-primary-50 text-primary-700"
+            data-pagefind-filter={`${field.key}:true`}
+          >
+            {field.label}
+          </span>
+        );
+      }
+
+      if (field.display === 'pill_list' && Array.isArray(raw)) {
+        return (
+          <>
+            {raw.map((v) => (
+              <span
+                class="inline-flex items-center px-2 py-0.5 rounded-full text-xs bg-gray-100 text-gray-700"
+                data-pagefind-filter={`${field.key}:${String(v)}`}
+              >
+                {String(v)}
+              </span>
+            ))}
+          </>
+        );
+      }
+
+      if (field.display === 'badge') {
+        return (
+          <span
+            class="inline-flex items-center px-2 py-0.5 rounded text-xs bg-gray-100"
+            data-pagefind-filter={`${field.key}:${String(raw)}`}
+          >
+            {field.label}: {String(raw)}
+          </span>
+        );
+      }
+
+      return null;
+    })}
+  </div>
+)}

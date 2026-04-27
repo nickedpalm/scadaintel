@@ -1,0 +1,63 @@
+[
+  {
+    "slug": "plcs-plus-international-colorado-springs",
+    "name": "PLC's Plus International",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "address": "Not provided",
+    "lat": 38.8339,
+    "lng": -104.8214,
+    "phone": "Not provided",
+    "website": "https://bkppi.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "PLCs, HMI and SCADA programming company providing programming services for projects of all sizes",
+    "certifications": [],
+    "services": [
+      "PLC programming",
+      "HMI programming",
+      "SCADA programming"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:02",
+    "sentiment": {
+      "label": "positive",
+      "score": 0.94,
+      "keywords": [
+        "knowledgeable",
+        "efficient",
+        "trusted partner",
+        "on-time delivery",
+        "exemplary service",
+        "responsive"
+      ],
+      "highlights": [
+        {
+          "text": "Fast, efficient, and provided exceptional service. I would definitely work with PLCs Plus again.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Delivered on time and on budget. We're very happy to have PLCs Plus as our partner.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "After eight years of partnership, I can attest to the level of service quality they offered.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Bill Scroggins really delivered for me and built a strong client relationship with my company.",
+          "sentiment": "positive"
+        }
+      ],
+      "summary": "PLCs Plus International has exceptional reputation with long-term clients across industrial sectors, consistently praised for technical expertise, reliability, responsive account management, and on-time delivery."
+    }
+  }
+]

@@ -1,0 +1,117 @@
+---
+import type { SchemaField } from '~/config';
+
+interface Props {
+  schema: SchemaField[];
+  listings: Array<Record<string, unknown>>;
+}
+
+const { schema, listings } = Astro.props;
+
+const facetFields = schema.filter((f) => f.facet === true);
+
+function numericRange(key: string): [number, number] | null {
+  const values = listings
+    .map((l) => l[key])
+    .filter((v): v is number => typeof v === 'number');
+  if (values.length === 0) return null;
+  return [Math.min(...values), Math.max(...values)];
+}
+---
+
+{facetFields.length > 0 && (
+  <aside class="filter-panel" data-filter-panel>
+    <h3 class="font-semibold mb-3">Filter</h3>
+    <form data-filter-form class="space-y-4 text-sm">
+      {facetFields.map((field) => (
+        <fieldset class="border-t pt-3">
+          <legend class="font-medium mb-2">{field.label}</legend>
+
+          {field.type === 'boolean' && (
+            <label class="flex items-center gap-2">
+              <input
+                type="checkbox"
+                name={field.key}
+                value="true"
+                data-filter-input
+                data-filter-key={field.key}
+                data-filter-type="boolean"
+              />
+              <span>Only {field.label}</span>
+            </label>
+          )}
+
+          {field.type === 'enum' && field.enum && (
+            <div class="space-y-1">
+              {field.enum.map((opt) => (
+                <label class="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name={field.key}
+                    value={opt}
+                    data-filter-input
+                    data-filter-key={field.key}
+                    data-filter-type="enum"
+                  />
+                  <span>{opt}</span>
+                </label>
+              ))}
+            </div>
+          )}
+
+          {field.type === 'multi_enum' && field.enum && (
+            <div class="space-y-1">
+              {field.enum.map((opt) => (
+                <label class="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    name={field.key}
+                    value={opt}
+                    data-filter-input
+                    data-filter-key={field.key}
+                    data-filter-type="multi_enum"
+                  />
+                  <span>{opt}</span>
+                </label>
+              ))}
+            </div>
+          )}
+
+          {field.type === 'number' && (() => {
+            const range = numericRange(field.key);
+            if (!range) return null;
+            const [min, max] = range;
+            return (
+              <div class="flex gap-2 items-center">
+                <input
+                  type="number"
+                  name={`${field.key}_min`}
+                  placeholder={String(min)}
+                  data-filter-input
+                  data-filter-key={field.key}
+                  data-filter-type="number_min"
+                  class="w-20 border rounded px-2 py-1"
+                />
+                <span>—</span>
+                <input
+                  type="number"
+                  name={`${field.key}_max`}
+                  placeholder={String(max)}
+                  data-filter-input
+                  data-filter-key={field.key}
+                  data-filter-type="number_max"
+                  class="w-20 border rounded px-2 py-1"
+                />
+                {field.unit && <span class="text-gray-500">{field.unit}</span>}
+              </div>
+            );
+          })()}
+        </fieldset>
+      ))}
+
+      <button type="reset" data-filter-reset class="text-primary-600 hover:underline text-xs">
+        Clear filters
+      </button>
+    </form>
+  </aside>
+)}

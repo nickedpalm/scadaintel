@@ -1,0 +1,140 @@
+---
+// Client-side runtime for FilterPanel: read URL params, apply to form, hide
+// non-matching listing cards via CSS. No framework — vanilla JS.
+//
+// Requires:
+//   - <form data-filter-form> with <input data-filter-input data-filter-key=... data-filter-type=...>
+//   - Listing cards marked with data-listing and data-<key>=<csv-values> attrs
+---
+
+<script>
+  (() => {
+    const form = document.querySelector('[data-filter-form]') as HTMLFormElement | null;
+    if (!form) return;
+
+    const listings = document.querySelectorAll<HTMLElement>('[data-listing]');
+
+    function readUrlState(): Record<string, string[]> {
+      const params = new URLSearchParams(window.location.search);
+      const state: Record<string, string[]> = {};
+      for (const [k, v] of params.entries()) {
+        if (!v) continue;
+        state[k] = v.split(',');
+      }
+      return state;
+    }
+
+    function writeUrlState(state: Record<string, string[]>): void {
+      const params = new URLSearchParams();
+      for (const [k, values] of Object.entries(state)) {
+        if (values.length > 0) params.set(k, values.join(','));
+      }
+      const qs = params.toString();
+      const url = qs ? `${window.location.pathname}?${qs}` : window.location.pathname;
+      window.history.replaceState({}, '', url);
+    }
+
+    function applyFiltersToDom(state: Record<string, string[]>): void {
+      for (const card of listings) {
+        let keep = true;
+        for (const [key, values] of Object.entries(state)) {
+          if (key.endsWith('_min') || key.endsWith('_max')) {
+            const baseKey = key.replace(/_(min|max)$/, '');
+            const cardVal = parseFloat(card.dataset[baseKey] || '');
+            if (isNaN(cardVal)) {
+              keep = false;
+              break;
+            }
+            const num = parseFloat(values[0]);
+            if (isNaN(num)) continue;
+            if (key.endsWith('_min') && cardVal < num) {
+              keep = false;
+              break;
+            }
+            if (key.endsWith('_max') && cardVal > num) {
+              keep = false;
+              break;
+            }
+            continue;
+          }
+          const cardVal = card.dataset[key];
+          if (!cardVal) {
+            keep = false;
+            break;
+          }
+          const cardValues = cardVal.split(',');
+          const matchAny = values.some((v) => cardValues.includes(v));
+          if (!matchAny) {
+            keep = false;
+            break;
+          }
+        }
+        card.classList.toggle('filter-hidden', !keep);
+      }
+    }
+
+    function readFormState(): Record<string, string[]> {
+      const state: Record<string, string[]> = {};
+      for (const el of form!.querySelectorAll<HTMLInputElement>('[data-filter-input]')) {
+        const key = el.dataset.filterKey!;
+        const type = el.dataset.filterType!;
+        if (type === 'boolean') {
+          if (el.checked) state[key] = ['true'];
+        } else if (type === 'enum') {
+          if (el.checked) state[key] = [el.value];
+        } else if (type === 'multi_enum') {
+          if (el.checked) {
+            state[key] = state[key] || [];
+            state[key].push(el.value);
+          }
+        } else if (type === 'number_min' && el.value) {
+          state[`${key}_min`] = [el.value];
+        } else if (type === 'number_max' && el.value) {
+          state[`${key}_max`] = [el.value];
+        }
+      }
+      return state;
+    }
+
+    function applyUrlStateToForm(state: Record<string, string[]>): void {
+      for (const el of form!.querySelectorAll<HTMLInputElement>('[data-filter-input]')) {
+        const key = el.dataset.filterKey!;
+        const type = el.dataset.filterType!;
+        if (type === 'boolean') {
+          const selected = state[key] || [];
+          el.checked = selected.includes('true');
+        } else if (type === 'enum' || type === 'multi_enum') {
+          const selected = state[key] || [];
+          el.checked = selected.includes(el.value);
+        } else if (type === 'number_min') {
+          el.value = state[`${key}_min`]?.[0] || '';
+        } else if (type === 'number_max') {
+          el.value = state[`${key}_max`]?.[0] || '';
+        }
+      }
+    }
+
+    const urlState = readUrlState();
+    applyUrlStateToForm(urlState);
+    applyFiltersToDom(urlState);
+
+    form.addEventListener('change', () => {
+      const state = readFormState();
+      writeUrlState(state);
+      applyFiltersToDom(state);
+    });
+
+    form.addEventListener('reset', () => {
+      setTimeout(() => {
+        writeUrlState({});
+        applyFiltersToDom({});
+      }, 0);
+    });
+  })();
+</script>
+
+<style>
+  .filter-hidden {
+    display: none !important;
+  }
+</style>

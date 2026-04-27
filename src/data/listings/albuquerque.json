@@ -1,0 +1,125 @@
+[
+  {
+    "slug": "ic-tech-inc-albuquerque",
+    "name": "IC Tech Inc.",
+    "city": "Albuquerque",
+    "state": "NM",
+    "address": "",
+    "lat": 35.0844,
+    "lng": -106.6504,
+    "phone": "2545352419",
+    "website": "https://www.ictscada.com",
+    "email": "605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Telemetry and SCADA systems for surface and ground water management, municipal water and waste water system automation, industrial control.",
+    "certifications": [],
+    "services": [
+      "SCADA systems",
+      "Telemetry",
+      "Water resource management automation"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 16:00:39",
+    "sentiment": null
+  },
+  {
+    "slug": "plcs-plus-albuquerque",
+    "name": "PLCs Plus",
+    "city": "Albuquerque",
+    "state": "NM",
+    "address": "",
+    "lat": 35.0844,
+    "lng": -106.6504,
+    "phone": "(208) 680-2772",
+    "website": "https://bkppi.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "PLC, HMI, SCADA programming services for New Mexico based businesses.",
+    "certifications": [],
+    "services": [
+      "PLC programming",
+      "HMI development",
+      "SCADA architecture and system design"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 16:00:39",
+    "sentiment": {
+      "label": "positive",
+      "score": 0.95,
+      "keywords": [
+        "reliable",
+        "knowledgeable",
+        "responsive",
+        "professional",
+        "comprehensive",
+        "trustworthy"
+      ],
+      "highlights": [
+        {
+          "text": "They were fast, efficient, and provided exceptional service.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Delivered on time and on budget with highly qualified resources.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Exemplary service after eight years of partnership.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "PLCs Plus is an integral part of our operations.",
+          "sentiment": "positive"
+        }
+      ],
+      "summary": "All reviews are overwhelmingly positive, praising PLCs Plus for reliability, expertise, responsiveness, and delivering long-term value across multiple service areas."
+    }
+  },
+  {
+    "slug": "transmission-distribution-services-llc-albuquerque",
+    "name": "Transmission & Distribution Services LLC",
+    "city": "Albuquerque",
+    "state": "NM",
+    "address": "5401 Beverly Hills Ave NE, Albuquerque, New Mexico 87113",
+    "lat": 35.0844,
+    "lng": -106.6504,
+    "phone": "(505) 344-4234",
+    "website": "https://www.t-d-services.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Automation and Supervisory Control and Data Acquisition (SCADA) for power delivery.",
+    "certifications": [],
+    "services": [
+      "SCADA",
+      "Control automation",
+      "Data acquisition"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 16:00:39",
+    "sentiment": null
+  }
+]

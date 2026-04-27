@@ -1,0 +1,18 @@
+# deps + build
+node_modules/
+dist/
+.astro/
+.wrangler/
+
+# env
+.env
+.env.local
+.env.*.local
+
+# sqlite + research caches (regenerable from scrape/research steps)
+pipeline.db
+pipeline.db-journal
+research/
+
+# macOS
+.DS_Store

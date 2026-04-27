@@ -1,0 +1,130 @@
+[
+  {
+    "slug": "arcsine-las-vegas",
+    "name": "ArcSine",
+    "city": "Las Vegas",
+    "state": "NV",
+    "address": "Not provided",
+    "lat": 36.1699,
+    "lng": -115.1398,
+    "phone": "Not provided",
+    "website": "https://www.arc-sine.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "SCADA system expert providing design and integration services. Experience includes municipal-wide SCADA systems and expansion projects ranging from small to large-scale implementations",
+    "certifications": [],
+    "services": [
+      "SCADA design",
+      "SCADA integration",
+      "Municipal SCADA systems",
+      "SCADA expansion projects"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 16:00:14",
+    "sentiment": null
+  },
+  {
+    "slug": "plcs-plus-international-las-vegas",
+    "name": "PLC's Plus International",
+    "city": "Las Vegas",
+    "state": "NV",
+    "address": "Not provided",
+    "lat": 36.1699,
+    "lng": -115.1398,
+    "phone": "(208) 616-2081",
+    "website": "https://bkppi.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "PLCs, HMI, and SCADA programming company serving Nevada businesses of all project sizes",
+    "certifications": [],
+    "services": [
+      "PLC programming",
+      "HMI programming",
+      "SCADA programming"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 16:00:14",
+    "sentiment": {
+      "label": "positive",
+      "score": 0.98,
+      "keywords": [
+        "reliable",
+        "professional",
+        "knowledgeable",
+        "on-time",
+        "responsive",
+        "trusted"
+      ],
+      "highlights": [
+        {
+          "text": "Delivered on time and on budget with highly qualified resources",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Exceptional service, fast and efficient with a knowledgeable person",
+          "sentiment": "positive"
+        },
+        {
+          "text": "After eight years of partnership, I can attest to their service quality",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Integral part of our operations, only contractor manager that really delivered",
+          "sentiment": "positive"
+        }
+      ],
+      "summary": "Overwhelmingly positive reputation with consistent praise for technical expertise, reliability, on-time delivery, responsive communication, and long-term partnership value across industrial and utility sectors."
+    }
+  },
+  {
+    "slug": "telstar-instruments-las-vegas",
+    "name": "Telstar Instruments",
+    "city": "Las Vegas",
+    "state": "NV",
+    "address": "Not provided",
+    "lat": 36.1699,
+    "lng": -115.1398,
+    "phone": "(775) 501-8588",
+    "website": "https://telstarinc.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "State-certified instrumentation and controls integrator providing SCADA and PLC systems design, installation, maintenance, calibration, and on-site training",
+    "certifications": [],
+    "services": [
+      "SCADA systems",
+      "PLC systems",
+      "Design",
+      "Installation",
+      "Maintenance",
+      "Calibration",
+      "On-site training"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 16:00:14",
+    "sentiment": null
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "actemium-indianapolis-indianapolis",
+    "name": "Actemium Indianapolis",
+    "city": "Indianapolis",
+    "state": "IN",
+    "address": "",
+    "lat": 39.7684,
+    "lng": -86.1581,
+    "phone": "317-842-3500",
+    "website": "https://www.actemium.us/actemium-indianapolis/",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Provides customizable integration solutions including SCADA, data storage, serialization/traceability, and analytics for hardware and software systems",
+    "certifications": [],
+    "services": [
+      "SCADA",
+      "integration solutions",
+      "data storage",
+      "analytics",
+      "serialization/traceability"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:32",
+    "sentiment": null
+  },
+  {
+    "slug": "patti-engineering-indianapolis",
+    "name": "Patti Engineering",
+    "city": "Indianapolis",
+    "state": "IN",
+    "address": "",
+    "lat": 39.7684,
+    "lng": -86.1581,
+    "phone": "",
+    "website": "https://www.pattiengineering.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Specializes in SCADA integration using industry-leading technologies including Ignition SCADA, Siemens WinCC, and Aveva Edge for industrial automation",
+    "certifications": [],
+    "services": [
+      "SCADA integration",
+      "Ignition SCADA",
+      "Siemens WinCC",
+      "Aveva Edge",
+      "industrial automation"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:32",
+    "sentiment": null
+  },
+  {
+    "slug": "toric-engineering-indianapolis",
+    "name": "Toric Engineering",
+    "city": "Indianapolis",
+    "state": "IN",
+    "address": "5707 W Minnesota St, Indianapolis, IN 46241",
+    "lat": 39.7684,
+    "lng": -86.1581,
+    "phone": "(317) 718-1800",
+    "website": "https://toriceng.com",
+    "email": "",
+    "contact_form_url": "",
+    "contact_method": "",
+    "rating": 0,
+    "review_count": 0,
+    "description": "Builds water, wastewater, and gas distribution control panels; provides control system integration consultation and maintenance services",
+    "certifications": [],
+    "services": [
+      "water control automation",
+      "wastewater control automation",
+      "gas distribution control panels",
+      "control system integration",
+      "maintenance service"
+    ],
+    "years_experience": null,
+    "coverage_area": "",
+    "equipment": [],
+    "claimed": false,
+    "featured": false,
+    "source": "perplexity",
+    "scraped_at": "2026-04-26 15:59:32",
+    "sentiment": {
+      "label": "positive",
+      "score": 1.0,
+      "keywords": [
+        "professional",
+        "dedicated",
+        "responsive",
+        "expertise",
+        "reliable",
+        "attentive",
+        "team-oriented"
+      ],
+      "highlights": [
+        {
+          "text": "I can't imagine operating our waste water treatment plant without the SCADA that Toric designed.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "Michael Parker took the time to understand the processes and valued my input as an operator.",
+          "sentiment": "positive"
+        },
+        {
+          "text": "They stayed late and got everything working.",
+          "sentiment": "positive"
+        }
+      ],
+      "summary": "Toric Engineering receives consistently strong praise for technical expertise, dedicated service, responsiveness, and team members who go above and beyond for clients."
+    }
+  }
+]
